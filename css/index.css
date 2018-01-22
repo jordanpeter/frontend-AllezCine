@@ -21,3 +21,10 @@ img{
      position: fixed;
      margin: 0;
 }
+
+h1{
+     color: white;
+     position: fixed;
+     margin-left: 40%;
+     margin-top: 5%;
+}
