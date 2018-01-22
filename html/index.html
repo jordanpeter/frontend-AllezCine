@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Allez CINE!</title>
+     <script src="../js/jquery-2.2.4.js"></script>
+     <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+<div id="imgLeft"><img src="../img/popcorn.jpg" alt="Popcorn" id="leftImg"></div>
+<div id="imgRight"><img src="../img/camera.jpg" alt="caméra"></div>
+</body>
+
+     <script>
+          $('#imgLeft').mouseover(function(){
+               $('#leftImg').fadeIn(1000,function(){
+                    $(this).css('filter','blur(5px)').fadeIn(1000);
+               })
+          })
+          $('#imgLeft').mouseout(function(){
+               $('#leftImg').fadeIn(1000,function(){
+
+                    $(this).css('filter','blur(0px)').fadeIn(1000);
+               })
+
+          })
+     </script>
+</html>
