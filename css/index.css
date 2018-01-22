@@ -1,0 +1,30 @@
+body{
+     width: 100vw;
+     height: 100vh;
+     background-color: black;
+}
+
+#imgLeft{
+     width: 50%;
+     float: left;
+     margin-top: 10%;
+}
+
+#imgRight{
+     width: 50%;
+     float: right;
+     margin-top: 10%;
+}
+
+img{
+     width: 50%;
+     position: fixed;
+     margin: 0;
+}
+
+h1{
+     color: white;
+     position: fixed;
+     margin-left: 40%;
+     margin-top: 5%;
+}

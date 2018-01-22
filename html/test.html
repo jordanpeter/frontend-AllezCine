@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <script src="../js/jquery-2.2.4.js"></script>
+      <link rel="stylesheet" href="../css/index.css">
+     <title>Document</title>
+</head>
+<body>
+     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+       <div class="carousel-inner" role="listbox">
+         <div class="carousel-item active">
+           <img class="d-block img-fluid" src="..." alt="First slide">
+         </div>
+         <div class="carousel-item">
+           <img class="d-block img-fluid" src="..." alt="Second slide">
+         </div>
+         <div class="carousel-item">
+           <img class="d-block img-fluid" src="..." alt="Third slide">
+         </div>
+       </div>
+     </div>
+     <script>
+
+     // Pour générer le bouton en JS + JQuery
+     $(document).ready(function() {
+         $(window).scroll(function() {
+             if ($(window).scrollTop() == 0) {
+                 $('#scrollToTop').fadeOut("fast");
+             } else {
+                 if ($('#scrollToTop').length == 0) {
+                     $('body').append('<div id="scrollToTop">' + '<a href="#">Retour en haut</a>' + '</div>');
+                 }
+                 $('#scrollToTop').fadeIn("fast");
+             }
+         });
+         $('body').on('click', '#scrollToTop a', function(event) {
+             event.preventDefault();
+             $('html,body').animate({
+                 scrollTop: 0
+             }, 'slow');
+         });
+     });
+     // Pour générer le bouton en JS + JQuery
+
+
+     </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Allez CINE!</title>
+     <script src="../js/jquery-2.2.4.js"></script>
+     <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+     <h1>DONNEZ VOTRE AGE</h1>
+     <div id="imgLeft"><a href="home.html"><img src="../img/popcorn.jpg" alt="Popcorn" id="leftImg"></a></div>
+     <div id="imgRight"><img src="../img/camera.jpg" alt="caméra" id="rightImg"></div>
+</body>
+
+     <script>
+          $('#imgLeft').mouseover(function(){
+               $('#leftImg').fadeIn(function(){
+                    $(this).attr('src','../img/18plus.png');
+
+               })
+          })
+          $('#imgLeft').mouseout(function(){
+               $('#leftImg').fadeIn(function(){
+                    $(this).attr('src','../img/popcorn.jpg');
+               })
+          })
+
+          $('#imgRight').mouseover(function(){
+               $('#rightImg').fadeIn(function(){
+                    $(this).attr('src','../img/18minus.png');
+               })
+          })
+          $('#imgRight').mouseout(function(){
+               $('#rightImg').fadeIn(function(){
+                    $(this).attr('src','../img/camera.jpg');
+
+               })
+          })
+     </script>
+</html>
