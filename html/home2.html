@@ -113,38 +113,13 @@
           </div>
           <div class="container-red">
             <p><i class="fa fa-phone" aria-hidden="true"></i> (+000) 009 455 4088 </p>
-            <!-- Button trigger modal -->
-               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                 Login
-               </button>
+            <button id="login" type="submit" class="btn btn-primary">Login</button>
+                 <form action="" id="formLogin">
+                    banane
+                      <input type="text">
+                 </form>
 
-               <!-- Modal -->
-               <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                 <div class="modal-dialog modal-dialog-centered" role="document">
-                   <div class="modal-content">
-                     <div class="modal-header">
-                       <form action="">
-                            Login
-                            <input type="text">
-                            Password
-                            <input type="text">
-                       </form>
-                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                         <span aria-hidden="true">&times;</span>
-                       </button>
-                     </div>
-                     <div class="modal-footer">
-                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close/Sumbit/Login</button>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-
-
-               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                Register
-               </button>
-
+            <button id="register" type="submit" class="btn btn-primary">Register</button>
           </div>
           <div class="fiveImages">
             <img src="../img/batmanmovie-2017-comedie.jpg" alt="">
@@ -313,19 +288,7 @@
  <script>
       $(document).ready(function() {
            $('#formLogin').hide();
-
-           $('#login').on('click',function(){
-                $('#formLogin').show();
-           })
       })
-
-      function traductionElements()
-     {
-          popup = window.open('', 'popup', 'height=800, width=600');
-          popup.document.write('<form action="?" method="post">');
-          popup.document.write('<div><input type="submit" value="Valider" /></div>');
-          popup.document.write('</form>');
-     }
 
  </script>
 </body>
