@@ -38,5 +38,19 @@
 
                })
           })
+
+     $(document).ready(function() {
+          function age(){
+               var age = prompt("Entrez votre âge");
+               if (age >= 18){
+                    window.location = "../html/home.html";
+               }
+               else{
+                    window.location = "../html/homekids.html";
+               }
+          }
+          setTimeout(age, 2000);
+
+     })
      </script>
 </html>
