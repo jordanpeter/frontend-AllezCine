@@ -70,12 +70,15 @@ body {
   border-color: transparent !important;
 }
 
-.jumbotron {
+.first-container {
   background-image: url(../img/me-before-you.jpg);
   background-size: cover;
   background-position: center center;
   background-color: black;
   background-blend-mode: screen;
+}
+
+.jumbotron {
   padding: 0 !important;
   margin-left: 0 !important;
   background-color: transparent !important;
@@ -211,4 +214,18 @@ img {
   width: 100px;
   height: 140px;
   margin: 10px 15px;
+}
+
+#featuredMovies h1, #featuredSeries h1, #shopMovies h1, #contactUs h1 {
+  color: black !important;
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif !important;
+  border-left: thick solid #ff0000 !important;
+  font-stretch: condensed;
+}
+
+.row-narrow {
+  margin: 0 auto !important;
+  width: 75% !important;
 }
