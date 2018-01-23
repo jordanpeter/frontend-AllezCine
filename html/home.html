@@ -3,7 +3,7 @@
 
 <head lang="en">
   <meta charset="utf-8">
-  <link rel="stylesheet" href="./css/master.css">
+  <link rel="stylesheet" href="../css/home.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
@@ -147,19 +147,80 @@
 
           </div>
           <div class="fiveImages">
-            <img src="../img/batmanmovie-2017-comedie.jpg" alt="">
-            <img src="../img/hostel-2005-thriller.jpg" alt="">
-            <img src="../img/inception-2010-scifi.jpg" alt="">
-            <img src="../img/lepatientanglais-1996-dramatique.jpg" alt="">
-            <img src="../img/lesdeuxtours-2002-aventure.jpg" alt="">
-            <!-- <img src="../img/seven-1995-thriller.jpg" alt="">
-            <img src="../img/shutterisland-2010-thriller.jpg" alt="">
-            <img src="../img/starwarsempire-1980-scifi.jpg" alt="">
-            <img src="../img/Survivestyle5-2004-comedie.jpg" alt="">
-            <img src="../img/swissarmyman-2016-comedie.jpg" alt="">
-            <img src="../img/thefall-2006-dramatique.jpg" alt="">
-            <img src="../img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="">
-            <img src="../img/zoolander-2001-comedie.jpg" alt=""> -->
+               <div class="container">
+                 <div class="row">
+                      <div class="col-md-2 col-12">
+                         <div class="slideshow">
+                            <div>
+                                <img src="../img/batmanmovie-2017-comedie.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="../img/hostel-2005-thriller.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="../img/lesdeuxtours-2002-aventure.jpg" alt="">
+                            </div>
+                       </div>
+                    </div>
+
+
+                    <div class="col-md-2 col-12">
+                       <div class="slideshow">
+                            <div>
+                               <img src="../img/lepatientanglais-1996-dramatique.jpg" alt="">
+                           </div>
+                           <div>
+                               <img src="../img/lesdeuxtours-2002-aventure.jpg" alt="">
+                           </div>
+                           <div>
+                               <img src="../img/seven-1995-thriller.jpg" alt="">
+                           </div>
+                    </div>
+                  </div>
+
+
+                    <div class="col-md-2 col-12">
+                       <div class="slideshow">
+                            <div>
+                               <img src="../img/shutterisland-2010-thriller.jpg" alt="">
+                           </div>
+                           <div>
+                               <img src="../img/starwarsempire-1980-scifi.jpg" alt="">
+                           </div>
+                           <div>
+                               <img src="../img/Survivestyle5-2004-comedie.jpg" alt="">
+                           </div>
+                    </div>
+                  </div>
+
+                    <div class="col-md-2 col-12">
+                       <div class="slideshow">
+                            <div>
+                               <img src="../img/swissarmyman-2016-comedie.jpg" alt="">
+                           </div>
+                           <div>
+                               <img src="../img/thefall-2006-dramatique.jpg" alt="">
+                           </div>
+                           <div>
+                               <img src="../img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="">
+                           </div>
+                    </div>
+               </div>
+                    <div class="col-md-2 col-12">
+                       <div class="slideshow">
+                            <div>
+                               <img src="../img/swissarmyman-2016-comedie.jpg" alt="">
+                           </div>
+                           <div>
+                               <img src="../img/seven-1995-thriller.jpg" alt="">
+                           </div>
+                           <div>
+                               <img src="../img/zoolander-2001-comedie.jpg" alt="">
+                           </div>
+                    </div>
+               </div>
+          </div>
+          </div>
           </div>
         </div>
       </section>
@@ -319,13 +380,20 @@
            })
       })
 
-      function traductionElements()
-     {
-          popup = window.open('', 'popup', 'height=800, width=600');
-          popup.document.write('<form action="?" method="post">');
-          popup.document.write('<div><input type="submit" value="Valider" /></div>');
-          popup.document.write('</form>');
-     }
+      $(function() {
+         $(".slideshow").each(function(){$(this).children().not(":nth-child(2)").hide();});
+
+         setInterval(function() {
+             $('.slideshow').each(function(){
+                 $(this).children(':first')
+                 .fadeOut(1000)
+                 .next()
+                 .fadeIn(1000)
+                 .end()
+                 .appendTo($(this));
+             });
+        },  3000);
+     });
 
  </script>
 </body>
