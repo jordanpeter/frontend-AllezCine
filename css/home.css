@@ -6,11 +6,6 @@ body {
 }
 
 .first-page {
-  background-image: url(../img/me-before-you.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-color: black;
-  background-blend-mode: screen;
   font-family: 'Open Sans', sans-serif !important;
 }
 
@@ -76,6 +71,11 @@ body {
 }
 
 .jumbotron {
+  background-image: url(../img/me-before-you.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-color: black;
+  background-blend-mode: screen;
   padding: 0 !important;
   margin-left: 0 !important;
   background-color: transparent !important;
