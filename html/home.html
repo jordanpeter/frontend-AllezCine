@@ -293,22 +293,38 @@
           <button id="comedie">Comédie</button>
         </div>
         <!-- filter goes here -->
-        <img src="../img/batmanmovie-2017-comedie.jpg" alt="" class="all comedie">
-        <img src="../img/hostel-2005-thriller.jpg" alt="" class="all thriller">
-        <img src="../img/inception-2010-scifi.jpg" alt="" class="all scifi">
-        <img src="../img/lepatientanglais-1996-dramatique.jpg" alt="" class="all drama">
-        <img src="../img/lesdeuxtours-2002-aventure.jpg" alt="" class="all aventure">
-        <img src="../img/seven-1995-thriller.jpg" alt="" class="all thriller">
-        <img src="../img/shutterisland-2010-thriller.jpg" alt="" class="all thriller">
-        <img src="../img/starwarsempire-1980-scifi.jpg" alt="" class="all scifi">
-        <img src="../img/Survivestyle5-2004-comedie.jpg" alt="" class="all comedie">
-        <img src="../img/swissarmyman-2016-comedie.jpg" alt="" class="all comedie">
-        <img src="../img/thefall-2006-dramatique.jpg" alt="" class="all drama ">
-        <img src="../img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="" class="all comedie">
-        <img src="../img/zoolander-2001-comedie.jpg" alt="" class="all comedie morefilm">
+        <img src="../img/batmanmovie-2017-comedie.jpg" alt="" class="all comedie batman" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/hostel-2005-thriller.jpg" alt="" class="all thriller hostel" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/inception-2010-scifi.jpg" alt="" class="all scifi inception" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/lepatientanglais-1996-dramatique.jpg" alt="" class="all drama lepatient" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/lesdeuxtours-2002-aventure.jpg" alt="" class="all aventure lesdeuxtours" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/seven-1995-thriller.jpg" alt="" class="all thriller seven" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/shutterisland-2010-thriller.jpg" alt="" class="all thriller shutterisland" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/starwarsempire-1980-scifi.jpg" alt="" class="all scifi starwars" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/Survivestyle5-2004-comedie.jpg" alt="" class="all comedie survivestyle" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/swissarmyman-2016-comedie.jpg" alt="" class="all comedie swissarmyman" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/thefall-2006-dramatique.jpg" alt="" class="all drama thefall" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="" class="all comedie shadows" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/zoolander-2001-comedie.jpg" alt="" class="all comedie morefilm zoolander" data-toggle="modal" data-target="#imagemodal">
       </div>
            <button id="moreFilms">Plus de films</button>
     </div>
+     <!-- test modal lors du clic sur image -->
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+           <iframe width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="trailer"></iframe>
+           <h2 id="movieTitle"></h2>
+           <h3 id="movieYear"></h3><h3 id="movieStyle"></h3>
+        <div class="modal-body">
+        </div>
+     <div class="modal-footer">
+       <div class="col-xs-12">
+           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+ </div>
   </section>
   <section>
     <div class="container">
@@ -623,6 +639,113 @@
         $('#shopPic').attr('src','../img/zoolander-2001-comedie.jpg');
         }
      });
+     // end shopPic
+     // start Modal films
+     $(".batman").on({'click': function () {
+        $('#trailer').attr('src','https://www.youtube.com/embed/2znBVEWdYsY')
+        document.getElementById("movieTitle").innerHTML = "Batman";
+        document.getElementById("movieYear").innerHTML = "2017";
+        document.getElementById("movieStyle").innerHTML = "Comédie";
+        $('#imagemodal').modal('show');
+        }
+      });
+
+      $(".hostel").on({'click': function () {
+        $('#trailer').attr('src','https://www.youtube.com/embed/cVBdQiUHhZI')
+        document.getElementById("movieTitle").innerHTML = "Hostel";
+        document.getElementById("movieYear").innerHTML = "2005";
+        document.getElementById("movieStyle").innerHTML = "Thriller";
+        $('#imagemodal').modal('show');
+        }
+      });
+      $(".inception").on({'click': function () {
+        $('#trailer').attr('src','https://www.youtube.com/embed/B4nIVh1yvvc')
+        document.getElementById("movieTitle").innerHTML = "Inception";
+        document.getElementById("movieYear").innerHTML = "2010";
+        document.getElementById("movieStyle").innerHTML = "Sciences-Fiction";
+        $('#imagemodal').modal('show');
+        }
+      });
+      $(".lepatient").on({'click': function () {
+        $('#trailer').attr('src','https://www.youtube.com/embed/xImomcZczRY')
+        document.getElementById("movieTitle").innerHTML = "Le patient Anglais";
+        document.getElementById("movieYear").innerHTML = "1996";
+        document.getElementById("movieStyle").innerHTML = "Drama";
+        $('#imagemodal').modal('show');
+        }
+      });
+      $(".lesdeuxtours").on({'click': function () {
+        $('#trailer').attr('src','https://www.youtube.com/embed/LbfMDwc4azU')
+        document.getElementById("movieTitle").innerHTML = "Les Deux tours";
+        document.getElementById("movieYear").innerHTML = "2002";
+        document.getElementById("movieStyle").innerHTML = "Aventure";
+        $('#imagemodal').modal('show');
+        }
+      });
+      $(".seven").on({'click': function () {
+        $('#trailer').attr('src','https://www.youtube.com/embed/znmZoVkCjpI')
+        document.getElementById("movieTitle").innerHTML = "Seven";
+        document.getElementById("movieYear").innerHTML = "1995";
+        document.getElementById("movieStyle").innerHTML = "Thriller";
+        $('#imagemodal').modal('show');
+        }
+      });
+      $(".shutterisland").on({'click': function () {
+        $('#trailer').attr('src','https://www.youtube.com/embed/5iaYLCiq5RM')
+        document.getElementById("movieTitle").innerHTML = "Shutter island";
+        document.getElementById("movieYear").innerHTML = "2010";
+        document.getElementById("movieStyle").innerHTML = "Thriller";
+        $('#imagemodal').modal('show');
+        }
+      });
+      $(".starwars").on({'click': function () {
+        $('#trailer').attr('src','https://www.youtube.com/embed/mz_YWNhKOkM')
+        document.getElementById("movieTitle").innerHTML = "Star Wars Empire";
+        document.getElementById("movieYear").innerHTML = "1980";
+        document.getElementById("movieStyle").innerHTML = "Sciences-Fiction";
+        $('#imagemodal').modal('show');
+        }
+      });
+      $(".survivestyle").on({'click': function () {
+        $('#trailer').attr('src','https://www.youtube.com/embed/LEH7nDkiPEk')
+        document.getElementById("movieTitle").innerHTML = "Survive Style 5+";
+        document.getElementById("movieYear").innerHTML = "2004";
+        document.getElementById("movieStyle").innerHTML = "Comédie";
+        $('#imagemodal').modal('show');
+        }
+      });
+      $(".swissarmyman").on({'click': function () {
+        $('#trailer').attr('src','https://www.youtube.com/embed/yrK1f4TsQfM')
+        document.getElementById("movieTitle").innerHTML = "Swiss Army Man";
+        document.getElementById("movieYear").innerHTML = "2016";
+        document.getElementById("movieStyle").innerHTML = "Comédie";
+        $('#imagemodal').modal('show');
+        }
+      });
+      $(".thefall").on({'click': function () {
+        $('#trailer').attr('src','https://www.youtube.com/embed/dyFrBC1rAcg')
+        document.getElementById("movieTitle").innerHTML = "The Fall";
+        document.getElementById("movieYear").innerHTML = "2006";
+        document.getElementById("movieStyle").innerHTML = "Drama";
+        $('#imagemodal').modal('show');
+        }
+      });
+      $(".shadows").on({'click': function () {
+        $('#trailer').attr('src','https://www.youtube.com/embed/IAZEWtyhpes')
+        document.getElementById("movieTitle").innerHTML = "What We Do In Shadows";
+        document.getElementById("movieYear").innerHTML = "2014";
+        document.getElementById("movieStyle").innerHTML = "Comédie";
+        $('#imagemodal').modal('show');
+        }
+      });
+      $(".zoolander").on({'click': function () {
+        $('#trailer').attr('src','https://www.youtube.com/embed/YtQq0T3ExLs')
+        document.getElementById("movieTitle").innerHTML = "Zoolander";
+        document.getElementById("movieYear").innerHTML = "2001";
+        document.getElementById("movieStyle").innerHTML = "Comédie";
+        $('#imagemodal').modal('show');
+        }
+      });
 
 
   </script>
