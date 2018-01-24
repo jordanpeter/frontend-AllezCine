@@ -344,23 +344,23 @@
     <div class="container">
       <div class="row" id="shopMovies">
         <h1>Shop Movies</h1>
-        <div class="left col-12 col-md-8">
-          <img src="../img/batmanmovie-2017-comedie.jpg" alt="">
-          <img src="../img/hostel-2005-thriller.jpg" alt="">
-          <img src="../img/inception-2010-scifi.jpg" alt="">
-          <img src="../img/lepatientanglais-1996-dramatique.jpg" alt="">
-          <img src="../img/lesdeuxtours-2002-aventure.jpg" alt="">
-          <img src="../img/seven-1995-thriller.jpg" alt="">
-          <img src="../img/shutterisland-2010-thriller.jpg" alt="">
-          <img src="../img/starwarsempire-1980-scifi.jpg" alt="">
-          <img src="../img/Survivestyle5-2004-comedie.jpg" alt="">
-          <img src="../img/swissarmyman-2016-comedie.jpg" alt="">
-          <img src="../img/thefall-2006-dramatique.jpg" alt="" >
-          <img src="../img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="">
-          <img src="../img/zoolander-2001-comedie.jpg" alt="">
+        <div class="left col-12 col-md-8 shopSelect">
+          <img src="../img/batmanmovie-2017-comedie.jpg" alt="" id="batmanmovie-2017">
+          <img src="../img/hostel-2005-thriller.jpg" alt="" id="hostel-2005">
+          <img src="../img/inception-2010-scifi.jpg" alt="" id="inception-2010">
+          <img src="../img/lepatientanglais-1996-dramatique.jpg" alt="" id=lepatientanglais-1996>
+          <img src="../img/lesdeuxtours-2002-aventure.jpg" alt="" id="lesdeuxtours-2002">
+          <img src="../img/seven-1995-thriller.jpg" alt="" id="seven-1995">
+          <img src="../img/shutterisland-2010-thriller.jpg" alt="" id="shutterisland-2010">
+          <img src="../img/starwarsempire-1980-scifi.jpg" alt="" id="starwarsempire-1980">
+          <img src="../img/Survivestyle5-2004-comedie.jpg" alt="" id="Survivestyle5-2004">
+          <img src="../img/swissarmyman-2016-comedie.jpg" alt="" id="swissarmyman-2016">
+          <img src="../img/thefall-2006-dramatique.jpg" alt="" id="thefall-2006">
+          <img src="../img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="" id="WhatWeDoInTheShadows-2014">
+          <img src="../img/zoolander-2001-comedie.jpg" alt="" id="zoolander-2001">
         </div>
         <div class="right col-12 col-md-4">
-
+          <img src="../img/batmanmovie-2017-comedie.jpg" alt="" id="shopPic">
         </div>
       </div>
     </div>
@@ -457,10 +457,11 @@
          scrollTop: 0
       }, 'slow');
   });
-  
+
     $(document).ready(function() {
 
       $('.morefilm').hide();
+       $('.moreserie').hide();
       $('#formLogin').hide();
       $('#login').on('click', function() {
         $('#formLogin').show();
@@ -515,7 +516,6 @@
         $('.comedieSerie').show();
       })
       //End Series Filters
-
       //Button More Films
       $('#moreFilms').on('click',function(){
 			var iteration=$(this).data('iteration')||1
@@ -569,6 +569,61 @@
         });
       }, 3000);
     }); // End FiveImages
+
+    //start Shopping
+    $('#batmanmovie-2017').on({'click': function(){
+        $('#shopPic').attr('src','../img/batmanmovie-2017-comedie.jpg');
+        }
+     });
+     $('#hostel-2005').on({'click': function(){
+        $('#shopPic').attr('src','../img/hostel-2005-thriller.jpg');
+        }
+     });
+     $('#inception-2010').on({'click': function(){
+        $('#shopPic').attr('src','../img/inception-2010-scifi.jpg');
+        }
+     });
+     $('#lepatientanglais-1996').on({'click': function(){
+        $('#shopPic').attr('src','../img/lepatientanglais-1996-dramatique.jpg');
+        }
+     });
+     $('#lesdeuxtours-2002').on({'click': function(){
+        $('#shopPic').attr('src','../img/lesdeuxtours-2002-aventure.jpg');
+        }
+     });
+     $('#seven-1995').on({'click': function(){
+        $('#shopPic').attr('src','../img/seven-1995-thriller.jpg');
+        }
+     });
+     $('#shutterisland-2010').on({'click': function(){
+        $('#shopPic').attr('src','../img/shutterisland-2010-thriller.jpg');
+        }
+     });
+     $('#starwarsempire-1980').on({'click': function(){
+        $('#shopPic').attr('src','../img/starwarsempire-1980-scifi.jpg');
+        }
+     });
+     $('#Survivestyle5-2004').on({'click': function(){
+        $('#shopPic').attr('src','../img/Survivestyle5-2004-comedie.jpg');
+        }
+     });
+     $('#swissarmyman-2016').on({'click': function(){
+        $('#shopPic').attr('src','../img/swissarmyman-2016-comedie.jpg');
+        }
+     });
+     $('#thefall-2006').on({'click': function(){
+        $('#shopPic').attr('src','../img/thefall-2006-dramatique.jpg');
+        }
+     });
+     $('#WhatWeDoInTheShadows-2014').on({'click': function(){
+        $('#shopPic').attr('src','../img/WhatWeDoInTheShadows-2014-comedie.jpg');
+        }
+     });
+     $('#zoolander-2001').on({'click': function(){
+        $('#shopPic').attr('src','../img/zoolander-2001-comedie.jpg');
+        }
+     });
+
 
   </script>
 </body>
