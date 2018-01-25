@@ -293,7 +293,7 @@
           <button id="comedie">Comédie</button>
         </div>
         <!-- filter goes here -->
-        <img src="../img/batmanmovie-2017-comedie.jpg" alt="" class="all comedie" >
+        <img src="../img/batmanmovie-2017-comedie.jpg" alt="" class="all comedie batman" data-toggle="modal" data-target="#imagemodal">
         <img src="../img/hostel-2005-thriller.jpg" alt="" class="all thriller hostel" data-toggle="modal" data-target="#imagemodal">
         <img src="../img/inception-2010-scifi.jpg" alt="" class="all scifi inception" data-toggle="modal" data-target="#imagemodal">
         <img src="../img/lepatientanglais-1996-dramatique.jpg" alt="" class="all drama lepatient" data-toggle="modal" data-target="#imagemodal">
@@ -339,19 +339,19 @@
           <button id="comedieSerie">Comédie</button>
         </div>
         <!-- filter goes here -->
-        <img src="../img/batmanmovie-2017-comedie.jpg" alt="" class="allSerie comedieSerie">
-        <img src="../img/hostel-2005-thriller.jpg" alt="" class="allSerie thrillerSerie">
-        <img src="../img/inception-2010-scifi.jpg" alt="" class="allSerie scifiSerie">
-        <img src="../img/lepatientanglais-1996-dramatique.jpg" alt="" class="allSerie dramaSerie">
-        <img src="../img/lesdeuxtours-2002-aventure.jpg" alt="" class="allSerie aventureSerie">
-        <img src="../img/seven-1995-thriller.jpg" alt="" class="allSerie thrillerSerie">
-        <img src="../img/shutterisland-2010-thriller.jpg" alt="" class="allSerie thrillerSerie">
-        <img src="../img/starwarsempire-1980-scifi.jpg" alt="" class="allSerie scifiSerie">
-        <img src="../img/Survivestyle5-2004-comedie.jpg" alt="" class="allSerie comedieSerie">
-        <img src="../img/swissarmyman-2016-comedie.jpg" alt="" class="allSerie comedieSerie">
-        <img src="../img/thefall-2006-dramatique.jpg" alt="" class="allSerie dramaSerie">
-        <img src="../img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="" class="allSerie comedieSerie">
-        <img src="../img/zoolander-2001-comedie.jpg" alt="" class="allSerie comedieSerie moreserie">
+        <img src="../img/batmanmovie-2017-comedie.jpg" alt="" class="allSerie comedieSerie batman" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/hostel-2005-thriller.jpg" alt="" class="allSerie thrillerSerie hostel" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/inception-2010-scifi.jpg" alt="" class="allSerie scifiSerie inception" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/lepatientanglais-1996-dramatique.jpg" alt="" class="allSerie dramaSerie lepatient" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/lesdeuxtours-2002-aventure.jpg" alt="" class="allSerie aventureSerie lesdeuxtours" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/seven-1995-thriller.jpg" alt="" class="allSerie thrillerSerie seven" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/shutterisland-2010-thriller.jpg" alt="" class="allSerie thrillerSerie shutterisland" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/starwarsempire-1980-scifi.jpg" alt="" class="allSerie scifiSerie starwars" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/Survivestyle5-2004-comedie.jpg" alt="" class="allSerie comedieSerie survivestyle" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/swissarmyman-2016-comedie.jpg" alt="" class="allSerie comedieSerie swissarmyman" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/thefall-2006-dramatique.jpg" alt="" class="allSerie dramaSerie thefall" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="" class="allSerie comedieSerie shadows" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/zoolander-2001-comedie.jpg" alt="" class="allSerie comedieSerie moreserie zoolander" data-toggle="modal" data-target="#imagemodal">
       </div>
       <button id="moreSeries">Plus de séries</button>
     </div>
@@ -376,6 +376,8 @@
           <img src="../img/zoolander-2001-comedie.jpg" alt="" id="zoolander-2001">
         </div>
         <div class="right col-12 col-md-4">
+          <a href="#" id="previous">&laquo; Previous</a>
+          <a href="#" id="next">Next &raquo;</a>
           <img src="../img/batmanmovie-2017-comedie.jpg" alt="" id="shopPic">
         </div>
       </div>
@@ -746,6 +748,10 @@
         $('#imagemodal').modal('show');
         }
       });
+     //end Modal films
+
+     // Start previous and next button for shopFilms
+
 
 
   </script>
