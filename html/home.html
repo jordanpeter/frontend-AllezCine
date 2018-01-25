@@ -378,7 +378,6 @@
         <div class="right col-12 col-md-4">
           <button id="previous">previous</button>
           <button id="next">next</button>
-          <img src="../img/batmanmovie-2017-comedie.jpg" alt="" id="shopPic">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/2znBVEWdYsY" frameborder="0" allow="encrypted-media" allowfullscreen id="trailerShop"></iframe>
           <h2 id="titleShop">Batman</h2>
           <h3 id="yearShop">2017</h3>
@@ -410,7 +409,7 @@
             <textarea class="form-control" rows="5" id="comment"></textarea>
           </div>
           <div class="form-group col-12 col-md-12">
-            <button href="mailto:someone@example.com?Subject=Hello%20again" type="submit" class="btn btn-primary">Send message</button>
+            <button class="btn btn-primary" id="sendMessage">Send message</button>
           </div>
         </form>
 
@@ -422,10 +421,10 @@
       <div class="row ">
         <div class="subscribe col-12 col-md-12 ">
           <div class="col-6 col-md-6 ">
-            <input type="text " class="form-control " id="subscribe " placeholder="Enter email ">
+            <input type="text " class="form-control " id="subscribe" placeholder="Enter email ">
           </div>
           <div class="col-6 col-md-6 ">
-            <button href="# " type="subscribe " class="btn btn-primary ">Subscribe to us</button>
+            <button type="subscribe" class="btn btn-primary subscribeBtn">Subscribe to us</button>
           </div>
 
         </div>
@@ -594,7 +593,6 @@
 
     //start Shopping
     $('#batmanmovie-2017').on({'click': function(){
-        $('#shopPic').attr('src','../img/batmanmovie-2017-comedie.jpg');
         posData=0;
         $('#trailerShop').attr('src',url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
@@ -603,7 +601,6 @@
         }
      });
      $('#hostel-2005').on({'click': function(){
-        $('#shopPic').attr('src','../img/hostel-2005-thriller.jpg');
         posData=1;
         $('#trailerShop').attr('src',url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
@@ -612,7 +609,6 @@
         }
      });
      $('#inception-2010').on({'click': function(){
-        $('#shopPic').attr('src','../img/inception-2010-scifi.jpg');
         posData=2;
         $('#trailerShop').attr('src',url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
@@ -621,7 +617,6 @@
         }
      });
      $('#lepatientanglais-1996').on({'click': function(){
-        $('#shopPic').attr('src','../img/lepatientanglais-1996-dramatique.jpg');
         posData=3;
         $('#trailerShop').attr('src',url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
@@ -630,7 +625,6 @@
         }
      });
      $('#lesdeuxtours-2002').on({'click': function(){
-        $('#shopPic').attr('src','../img/lesdeuxtours-2002-aventure.jpg');
         posData=4;
         $('#trailerShop').attr('src',url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
@@ -639,7 +633,6 @@
         }
      });
      $('#seven-1995').on({'click': function(){
-        $('#shopPic').attr('src','../img/seven-1995-thriller.jpg');
         posData=5;
         $('#trailerShop').attr('src',url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
@@ -648,8 +641,7 @@
         }
      });
      $('#shutterisland-2010').on({'click': function(){
-        $('#shopPic').attr('src','../img/shutterisland-2010-thriller.jpg');
-        posData=6;
+         posData=6;
         $('#trailerShop').attr('src',url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
@@ -657,7 +649,6 @@
         }
      });
      $('#starwarsempire-1980').on({'click': function(){
-        $('#shopPic').attr('src','../img/starwarsempire-1980-scifi.jpg');
         posData=7;
         $('#trailerShop').attr('src',url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
@@ -666,7 +657,6 @@
         }
      });
      $('#Survivestyle5-2004').on({'click': function(){
-        $('#shopPic').attr('src','../img/Survivestyle5-2004-comedie.jpg');
         posData=8;
         $('#trailerShop').attr('src',url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
@@ -675,7 +665,6 @@
         }
      });
      $('#swissarmyman-2016').on({'click': function(){
-        $('#shopPic').attr('src','../img/swissarmyman-2016-comedie.jpg');
         posData=9;
         $('#trailerShop').attr('src',url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
@@ -684,7 +673,6 @@
         }
      });
      $('#thefall-2006').on({'click': function(){
-        $('#shopPic').attr('src','../img/thefall-2006-dramatique.jpg');
         posData=10;
         $('#trailerShop').attr('src',url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
@@ -693,7 +681,6 @@
         }
      });
      $('#WhatWeDoInTheShadows-2014').on({'click': function(){
-        $('#shopPic').attr('src','../img/WhatWeDoInTheShadows-2014-comedie.jpg');
         posData=11;
         $('#trailerShop').attr('src',url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
@@ -702,7 +689,6 @@
         }
      });
      $('#zoolander-2001').on({'click': function(){
-        $('#shopPic').attr('src','../img/zoolander-2001-comedie.jpg');
         posData=12;
         $('#trailerShop').attr('src',url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
@@ -854,11 +840,10 @@
      url[11]="https://www.youtube.com/embed/IAZEWtyhpes";
      url[12]="https://www.youtube.com/embed/YtQq0T3ExLs";
 
-     // function for next & previous buttons
+     // function for next & previous buttons + Loading Trailer when clicked images or button pressed
      $('#next').on({'click': function(){
           if(posData>=12){
                posData=0;
-               $('#shopPic'.attr('src',images[posData]));
                $('#trailerShop').attr('src',url[posData]);
                document.getElementById("titleShop").innerHTML = titles[posData];
                document.getElementById("yearShop").innerHTML = year[posData];
@@ -867,7 +852,6 @@
           }
           else{
                posData++;
-               $('#shopPic').attr('src',images[posData]);
                $('#trailerShop').attr('src',url[posData]);
                document.getElementById("titleShop").innerHTML = titles[posData];
                document.getElementById("yearShop").innerHTML = year[posData];
@@ -877,7 +861,6 @@
      $('#previous').on({'click': function(){
           if(posData <= 0){
                posData=12;
-               $('#shopPic').attr('src',images[posData]);
                $('#trailerShop').attr('src',url[posData]);
                document.getElementById("titleShop").innerHTML = titles[posData];
                document.getElementById("yearShop").innerHTML = year[posData];
@@ -886,7 +869,6 @@
           }
           else{
                posData--;
-               $('#shopPic').attr('src',images[posData]);
                $('#trailerShop').attr('src',url[posData]);
                document.getElementById("titleShop").innerHTML = titles[posData];
                document.getElementById("yearShop").innerHTML = year[posData];
@@ -894,10 +876,20 @@
 
           }
      }})
-
-     // Change Trailer when clicked
-
-
+     // Button send message that should open a pop up with the infos
+     $('#sendMessage').on({'click': function(){
+          var name = $('#inputFirst').val();
+          var lastName = $('#inputLast').val();
+          var email = $('#inputEmail').val();
+          var subject = $('#inputSubject').val();
+          var comment = $('#comment').val();
+          alert("Bonjour "+name+" "+lastName+" .\n\n Votre adresse email est: "+email+" \n\n Votre message a pour sujet: "+subject+" .\n\n Voici le contenu du messsage envoyé: \n\n"+comment);
+     }})
+     // Subscribe will show a pop up like the send message button
+     $('.subscribeBtn').on({'click': function(){
+          var emailSub = $('#subscribe').val();
+          alert("Vous êtes maintenant inscrit avec l'adresse email "+emailSub);
+     }})
 
   </script>
 </body>
