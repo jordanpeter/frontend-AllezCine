@@ -376,9 +376,10 @@
           <img src="../img/zoolander-2001-comedie.jpg" alt="" id="zoolander-2001">
         </div>
         <div class="right col-12 col-md-4">
-          <a href="#" id="previous">&laquo; Previous</a>
-          <a href="#" id="next">Next &raquo;</a>
+          <button id="previous">previous</button>
+          <button id="next">next</button>
           <img src="../img/batmanmovie-2017-comedie.jpg" alt="" id="shopPic">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/2znBVEWdYsY" frameborder="0" allow="encrypted-media" allowfullscreen id="trailerShop"></iframe>
         </div>
       </div>
     </div>
@@ -591,54 +592,93 @@
     //start Shopping
     $('#batmanmovie-2017').on({'click': function(){
         $('#shopPic').attr('src','../img/batmanmovie-2017-comedie.jpg');
+        posImg=0;
+        posUrl=0;
+        $('#trailerShop').attr('src',url[posUrl]);
         }
      });
      $('#hostel-2005').on({'click': function(){
         $('#shopPic').attr('src','../img/hostel-2005-thriller.jpg');
+        posImg=1;
+        posUrl=1;
+        $('#trailerShop').attr('src',url[posUrl]);
         }
      });
      $('#inception-2010').on({'click': function(){
         $('#shopPic').attr('src','../img/inception-2010-scifi.jpg');
+        posImg=2;
+        posUrl=2;
+        $('#trailerShop').attr('src',url[posUrl]);
         }
      });
      $('#lepatientanglais-1996').on({'click': function(){
         $('#shopPic').attr('src','../img/lepatientanglais-1996-dramatique.jpg');
+        posImg=3;
+        posUrl=3;
+        $('#trailerShop').attr('src',url[posUrl]);
         }
      });
      $('#lesdeuxtours-2002').on({'click': function(){
         $('#shopPic').attr('src','../img/lesdeuxtours-2002-aventure.jpg');
+        posImg=4;
+        posUrl=4;
+        $('#trailerShop').attr('src',url[posUrl]);
         }
      });
      $('#seven-1995').on({'click': function(){
         $('#shopPic').attr('src','../img/seven-1995-thriller.jpg');
+        posImg=5;
+        posUrl=5;
+        $('#trailerShop').attr('src',url[posUrl]);
         }
      });
      $('#shutterisland-2010').on({'click': function(){
         $('#shopPic').attr('src','../img/shutterisland-2010-thriller.jpg');
+        posImg=6;
+        posUrl=6;
+        $('#trailerShop').attr('src',url[posUrl]);
         }
      });
      $('#starwarsempire-1980').on({'click': function(){
         $('#shopPic').attr('src','../img/starwarsempire-1980-scifi.jpg');
+        posImg=7;
+        posUrl=7;
+        $('#trailerShop').attr('src',url[posUrl]);
         }
      });
      $('#Survivestyle5-2004').on({'click': function(){
         $('#shopPic').attr('src','../img/Survivestyle5-2004-comedie.jpg');
+        posImg=8;
+        posUrl=8;
+        $('#trailerShop').attr('src',url[posUrl]);
         }
      });
      $('#swissarmyman-2016').on({'click': function(){
         $('#shopPic').attr('src','../img/swissarmyman-2016-comedie.jpg');
+        posImg=9;
+        posUrl=9;
+        $('#trailerShop').attr('src',url[posUrl]);
         }
      });
      $('#thefall-2006').on({'click': function(){
         $('#shopPic').attr('src','../img/thefall-2006-dramatique.jpg');
+        posImg=10;
+        posUrl=10;
+        $('#trailerShop').attr('src',url[posUrl]);
         }
      });
      $('#WhatWeDoInTheShadows-2014').on({'click': function(){
         $('#shopPic').attr('src','../img/WhatWeDoInTheShadows-2014-comedie.jpg');
+        posImg=11;
+        posUrl=11;
+        $('#trailerShop').attr('src',url[posUrl]);
         }
      });
      $('#zoolander-2001').on({'click': function(){
         $('#shopPic').attr('src','../img/zoolander-2001-comedie.jpg');
+        posImg=12;
+        posUrl=12;
+        $('#trailerShop').attr('src',url[posUrl]);
         }
      });
      // end shopPic
@@ -751,6 +791,71 @@
      //end Modal films
 
      // Start previous and next button for shopFilms
+     var images = ['','','','','','','','','','','','','']
+     var url =['','','','','','','','','','','','']
+     var posImg = 0;
+     var posUrl = 0;
+     images[0]="../img/batmanmovie-2017-comedie.jpg"; images[1]="../img/hostel-2005-thriller.jpg";
+     images[2]="../img/inception-2010-scifi.jpg";
+     images[3]="../img/lepatientanglais-1996-dramatique.jpg";
+     images[4]="../img/lesdeuxtours-2002-aventure.jpg";
+     images[5]="../img/seven-1995-thriller.jpg";
+     images[6]="../img/shutterisland-2010-thriller.jpg";
+     images[7]="../img/starwarsempire-1980-scifi.jpg";
+     images[8]="../img/Survivestyle5-2004-comedie.jpg";
+     images[9]="../img/swissarmyman-2016-comedie.jpg";
+     images[10]="../img/thefall-2006-dramatique.jpg";
+     images[11]="../img/WhatWeDoInTheShadows-2014-comedie.jpg";
+     images[12]="../img/zoolander-2001-comedie.jpg";
+
+     url[0]="https://www.youtube.com/embed/2znBVEWdYsY";
+     url[1]="https://www.youtube.com/embed/cVBdQiUHhZI";
+     url[2]="https://www.youtube.com/embed/B4nIVh1yvvc";
+     url[3]="https://www.youtube.com/embed/xImomcZczRY";
+     url[4]="https://www.youtube.com/embed/LbfMDwc4azU";
+     url[5]="https://www.youtube.com/embed/znmZoVkCjpI";
+     url[6]="https://www.youtube.com/embed/5iaYLCiq5RM";
+     url[7]="https://www.youtube.com/embed/mz_YWNhKOkM";
+     url[8]="https://www.youtube.com/embed/LEH7nDkiPEk";
+     url[9]="https://www.youtube.com/embed/yrK1f4TsQfM";
+     url[10]="https://www.youtube.com/embed/dyFrBC1rAcg";
+     url[11]="https://www.youtube.com/embed/IAZEWtyhpes";
+     url[12]="https://www.youtube.com/embed/YtQq0T3ExLs";
+
+     // function for next & previous buttons
+     $('#next').on({'click': function(){
+          if(posImg>=12){
+               posImg=0;
+               posUrl=0;
+               $('#shopPic'.attr('src',images[posImg]));
+               $('#trailerShop').attr('src',url[posUrl]);
+          }
+          else{
+               posImg++;
+               $('#shopPic').attr('src',images[posImg]);
+               posUrl++;
+               $('#trailerShop').attr('src',url[posUrl]);
+          }
+     }})
+     $('#previous').on({'click': function(){
+          if(posImg <= 0){
+               posImg=12;
+               posUrl=12;
+               $('#shopPic').attr('src',images[posImg]);
+               posImg--;
+               $('#trailerShop').attr('src',url[posUrl]);
+               posUrl--;
+          }
+          else{
+               posImg--;
+               posUrl--;
+               $('#shopPic').attr('src',images[posImg]);
+               $('#trailerShop').attr('src',url[posUrl]);
+
+          }
+     }})
+
+     // Change Trailer when clicked
 
 
 
