@@ -380,6 +380,9 @@
           <button id="next">next</button>
           <img src="../img/batmanmovie-2017-comedie.jpg" alt="" id="shopPic">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/2znBVEWdYsY" frameborder="0" allow="encrypted-media" allowfullscreen id="trailerShop"></iframe>
+          <h2 id="titleShop">Batman</h2>
+          <h3 id="yearShop">2017</h3>
+          <h3 id="genderShop">Comédie</h3>
         </div>
       </div>
     </div>
@@ -592,93 +595,119 @@
     //start Shopping
     $('#batmanmovie-2017').on({'click': function(){
         $('#shopPic').attr('src','../img/batmanmovie-2017-comedie.jpg');
-        posImg=0;
-        posUrl=0;
-        $('#trailerShop').attr('src',url[posUrl]);
+        posData=0;
+        $('#trailerShop').attr('src',url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
         }
      });
      $('#hostel-2005').on({'click': function(){
         $('#shopPic').attr('src','../img/hostel-2005-thriller.jpg');
-        posImg=1;
-        posUrl=1;
-        $('#trailerShop').attr('src',url[posUrl]);
+        posData=1;
+        $('#trailerShop').attr('src',url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
         }
      });
      $('#inception-2010').on({'click': function(){
         $('#shopPic').attr('src','../img/inception-2010-scifi.jpg');
-        posImg=2;
-        posUrl=2;
-        $('#trailerShop').attr('src',url[posUrl]);
+        posData=2;
+        $('#trailerShop').attr('src',url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
         }
      });
      $('#lepatientanglais-1996').on({'click': function(){
         $('#shopPic').attr('src','../img/lepatientanglais-1996-dramatique.jpg');
-        posImg=3;
-        posUrl=3;
-        $('#trailerShop').attr('src',url[posUrl]);
+        posData=3;
+        $('#trailerShop').attr('src',url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
         }
      });
      $('#lesdeuxtours-2002').on({'click': function(){
         $('#shopPic').attr('src','../img/lesdeuxtours-2002-aventure.jpg');
-        posImg=4;
-        posUrl=4;
-        $('#trailerShop').attr('src',url[posUrl]);
+        posData=4;
+        $('#trailerShop').attr('src',url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
         }
      });
      $('#seven-1995').on({'click': function(){
         $('#shopPic').attr('src','../img/seven-1995-thriller.jpg');
-        posImg=5;
-        posUrl=5;
-        $('#trailerShop').attr('src',url[posUrl]);
+        posData=5;
+        $('#trailerShop').attr('src',url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
         }
      });
      $('#shutterisland-2010').on({'click': function(){
         $('#shopPic').attr('src','../img/shutterisland-2010-thriller.jpg');
-        posImg=6;
-        posUrl=6;
-        $('#trailerShop').attr('src',url[posUrl]);
+        posData=6;
+        $('#trailerShop').attr('src',url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
         }
      });
      $('#starwarsempire-1980').on({'click': function(){
         $('#shopPic').attr('src','../img/starwarsempire-1980-scifi.jpg');
-        posImg=7;
-        posUrl=7;
-        $('#trailerShop').attr('src',url[posUrl]);
+        posData=7;
+        $('#trailerShop').attr('src',url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
         }
      });
      $('#Survivestyle5-2004').on({'click': function(){
         $('#shopPic').attr('src','../img/Survivestyle5-2004-comedie.jpg');
-        posImg=8;
-        posUrl=8;
-        $('#trailerShop').attr('src',url[posUrl]);
+        posData=8;
+        $('#trailerShop').attr('src',url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
         }
      });
      $('#swissarmyman-2016').on({'click': function(){
         $('#shopPic').attr('src','../img/swissarmyman-2016-comedie.jpg');
-        posImg=9;
-        posUrl=9;
-        $('#trailerShop').attr('src',url[posUrl]);
+        posData=9;
+        $('#trailerShop').attr('src',url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
         }
      });
      $('#thefall-2006').on({'click': function(){
         $('#shopPic').attr('src','../img/thefall-2006-dramatique.jpg');
-        posImg=10;
-        posUrl=10;
-        $('#trailerShop').attr('src',url[posUrl]);
+        posData=10;
+        $('#trailerShop').attr('src',url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
         }
      });
      $('#WhatWeDoInTheShadows-2014').on({'click': function(){
         $('#shopPic').attr('src','../img/WhatWeDoInTheShadows-2014-comedie.jpg');
-        posImg=11;
-        posUrl=11;
-        $('#trailerShop').attr('src',url[posUrl]);
+        posData=11;
+        $('#trailerShop').attr('src',url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
         }
      });
      $('#zoolander-2001').on({'click': function(){
         $('#shopPic').attr('src','../img/zoolander-2001-comedie.jpg');
-        posImg=12;
-        posUrl=12;
-        $('#trailerShop').attr('src',url[posUrl]);
+        posData=12;
+        $('#trailerShop').attr('src',url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
         }
      });
      // end shopPic
@@ -791,10 +820,13 @@
      //end Modal films
 
      // Start previous and next button for shopFilms
-     var images = ['','','','','','','','','','','','','']
-     var url =['','','','','','','','','','','','']
-     var posImg = 0;
-     var posUrl = 0;
+     var images = ['','','','','','','','','','','','',''];
+     var url =['','','','','','','','','','','',''];
+     var titles =['Batman','Hostel','Inception','Le patient anglais','Les deux tours','Se7en','Shutter Island','Star Wars Empire','Survive Style 5+','Swiss army man','The fall','What We Do In The Shadows','Zoolander'];
+     var year = ['2017','2005','2010','1996','2002','1995','2010','1980','2004','2016','2006','2014','2001'];
+     var gender =['Comédie','Thriller','Sciences-Fiction','Drama','Aventure','Thriller','ThriThriller','Sciences-Fiction','Comédie','Comédie','Drama','Comédie','Comédie'];
+
+     var posData = 0;
      images[0]="../img/batmanmovie-2017-comedie.jpg"; images[1]="../img/hostel-2005-thriller.jpg";
      images[2]="../img/inception-2010-scifi.jpg";
      images[3]="../img/lepatientanglais-1996-dramatique.jpg";
@@ -824,33 +856,41 @@
 
      // function for next & previous buttons
      $('#next').on({'click': function(){
-          if(posImg>=12){
-               posImg=0;
-               posUrl=0;
-               $('#shopPic'.attr('src',images[posImg]));
-               $('#trailerShop').attr('src',url[posUrl]);
+          if(posData>=12){
+               posData=0;
+               $('#shopPic'.attr('src',images[posData]));
+               $('#trailerShop').attr('src',url[posData]);
+               document.getElementById("titleShop").innerHTML = titles[posData];
+               document.getElementById("yearShop").innerHTML = year[posData];
+               document.getElementById("genderShop").innerHTML = gender[posData];
+
           }
           else{
-               posImg++;
-               $('#shopPic').attr('src',images[posImg]);
-               posUrl++;
-               $('#trailerShop').attr('src',url[posUrl]);
+               posData++;
+               $('#shopPic').attr('src',images[posData]);
+               $('#trailerShop').attr('src',url[posData]);
+               document.getElementById("titleShop").innerHTML = titles[posData];
+               document.getElementById("yearShop").innerHTML = year[posData];
+               document.getElementById("genderShop").innerHTML = gender[posData];
           }
      }})
      $('#previous').on({'click': function(){
-          if(posImg <= 0){
-               posImg=12;
-               posUrl=12;
-               $('#shopPic').attr('src',images[posImg]);
-               posImg--;
-               $('#trailerShop').attr('src',url[posUrl]);
-               posUrl--;
+          if(posData <= 0){
+               posData=12;
+               $('#shopPic').attr('src',images[posData]);
+               $('#trailerShop').attr('src',url[posData]);
+               document.getElementById("titleShop").innerHTML = titles[posData];
+               document.getElementById("yearShop").innerHTML = year[posData];
+               document.getElementById("genderShop").innerHTML = gender[posData];
+               posData--;
           }
           else{
-               posImg--;
-               posUrl--;
-               $('#shopPic').attr('src',images[posImg]);
-               $('#trailerShop').attr('src',url[posUrl]);
+               posData--;
+               $('#shopPic').attr('src',images[posData]);
+               $('#trailerShop').attr('src',url[posData]);
+               document.getElementById("titleShop").innerHTML = titles[posData];
+               document.getElementById("yearShop").innerHTML = year[posData];
+               document.getElementById("genderShop").innerHTML = gender[posData];
 
           }
      }})
