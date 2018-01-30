@@ -167,7 +167,7 @@ body {
 }
 
 .container-row {
-  width: 75%;
+  width: 75% !important;
   margin: 0 auto;
   color: black !important;
 }
@@ -188,9 +188,9 @@ body {
 
 /*text positioning in fading images*/
 
-.fiveImages .row {
-  margin: 50px auto;
-  border: 1px solid lightgrey !important;
+.fiveImages {
+  margin: 50px;
+  border: 1px lightgrey solid !important;
 }
 
 .fiveImages p {
@@ -312,6 +312,7 @@ body {
 
 .btn.btn-primary {
   text-transform: uppercase;
+  font-weight: bold;
   background-color: red !important;
   border-radius: 0 !important;
   border-color: red !important;
@@ -330,6 +331,20 @@ body {
   padding: 10px;
   border-color: transparent !important;
   text-shadow: none !important;
+}
+
+.btn-hide {
+  text-align: center;
+}
+
+.btn-hide button {
+  text-transform: uppercase;
+  color: white !important;
+  font-weight: bold;
+  background-color: red !important;
+  border-radius: 0 !important;
+  border-color: transparent!important;
+  padding: 10px;
 }
 
 .slideshow {
@@ -441,4 +456,110 @@ hr {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 5px;
   margin
+}
+
+#shopMovies .right {
+  padding: 0;
+  margin-top: 10px;
+  background-color: black !important;
+  height: 100%;
+  color: white !important;
+}
+
+#shopMovies .right button {
+  margin-top: -25px;
+  border-radius: 0 !important;
+  border-color: transparent!important;
+  background-color: black !important;
+  color: white !important;
+}
+
+#shopMovies .right h4 {
+  text-transform: uppercase;
+  color: red !important;
+  font-weight: bold;
+}
+
+#shopMovies .right h5 {
+  color: red !important;
+  font-weight: bold;
+}
+
+#shopMovies .right iframe {
+  width: 100%;
+  height: auto;
+}
+
+/*pop-ups windows ____________________________________________*/
+
+.modal-header {
+  text-align: center;
+  text-transform: uppercase !important;
+  font-style: 'Open Sans Condensed', sans-serif !important;
+}
+
+.modal-header h4 {
+  color: red !important;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.modal-header p {
+  color: black !important;
+  text-align: left;
+}
+
+.modal-header input {
+  padding: 5px;
+  margin: 10px;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-body input {
+  padding: 5px;
+  margin: 10px;
+}
+
+.modal-body p {
+  color: black !important;
+  margin: 0 !important;
+}
+
+.modal-footer button {
+  font-weight: bold;
+  color: white !important;
+  text-transform: uppercase;
+  background-color: red !important;
+  border-radius: 0 !important;
+  border-color: transparent!important;
+  padding: 10px;
+}
+
+.modal.fade {
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-style: 'Open Sans Condensed', sans-serif !important;
+}
+
+.modal-content iframe {
+  border: 1px black solid;
+  margin: 20px;
+  display: relative;
+  width: 500px;
+  height: auto;
+}
+
+@media only screen and (max-width:768px) {
+  .modal-content iframe {
+    width: 150px;
+    height: auto;
+  }
+  .modal.fade {
+    margin: 0 auto;
+    width: 300px;
+  }
 }

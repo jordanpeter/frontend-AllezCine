@@ -49,10 +49,10 @@
             <li class="dropdown menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Genre <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Comedy</a></li>
-                <li><a href="#">Western</a></li>
-                <li><a href="#">Fiction</a></li>
+                <li><a href="#drama">Drama</a></li>
+                <li><a href="#comedie">Comedy</a></li>
+                <li><a href="#scifi">Sci-Fi</a></li>
+                <li><a href="#aventure">Adventure</a></li>
               </ul>
               <li class="menu"><a href="#featuredMovies">Featured Movies</a></li>
               <li class="menu"><a href="#featuredSeries">Featured Series</a></li>
@@ -139,18 +139,17 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <p>
-                <h4 class="modal-title">Login</h4></p>
+              <h4 class="modal-title">Please Log-in</h4>
               <form action="">
-                Login
-                <input type="text"> Password
-                <input type="password"> Rester connecté
-                <input type="checkbox">
-                <br><br>
-                <a href="../html/index.html">Mot de passe oublié.</a>
-                <br><br>
-                <a href="../html/home.html">Cancel</a>
+                <input type="text" placeholder="Login">
+                <input type="password" placeholder="Password">
+                <p>Stay Connected <input type="checkbox"></p>
+                <p> <a href="../html/index.html">Forgot password?</a>
+                </p>
+                <p> <a href="../html/home.html">Cancel</a>
+                </p>
               </form>
+
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                          <span aria-hidden="true">&times;</span>
                        </button>
@@ -158,8 +157,8 @@
 
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
-              <button type="button" class="btn btn-secondary" data-dismiss="modal" data-target="#myModal">Créer un compte</button>
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close/Sumbit/Login</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" data-target="#myModal">Create an account</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Login</button>
             </div>
           </div>
         </div>
@@ -178,12 +177,12 @@
               <h4 class="modal-title">Register</h4>
             </div>
             <div class="modal-body">
-              Name
-              <input type="text">
-              <br><br> Password
-              <input type="password"> Confirm Password
-              <input type="password">
-              <br><br> Conditions générales d'utilisation
+
+              <input type="text" placeholder="Name">
+
+              <input type="password" placeholder="Password">
+              <input type="password" placeholder="Confirm Password">
+              <p>Conditions générales d'utilisation</p>
               <select id="monselect">
                            <option value="valeur1">Lu et approuvé</option>
                            <option value="valeur2" selected>Non approuvé</option>
@@ -301,8 +300,8 @@
             </div>
           </div>
         </div>
-
       </div>
+    </div>
   </section>
   <section>
     <div class="container-row">
@@ -317,43 +316,40 @@
           <button id="comedie">Comédie</button>
         </div>
         <!-- filter goes here -->
-        <img src="../img/batmanmovie-2017-comedie.jpg" alt="" class="all comedie">
-        <img src="../img/hostel-2005-thriller.jpg" alt="" class="all thriller">
-        <img src="../img/inception-2010-scifi.jpg" alt="" class="all scifi">
-        <img src="../img/lepatientanglais-1996-dramatique.jpg" alt="" class="all drama">
-        <img src="../img/lesdeuxtours-2002-aventure.jpg" alt="" class="all aventure">
-        <img src="../img/seven-1995-thriller.jpg" alt="" class="all thriller">
-        <img src="../img/shutterisland-2010-thriller.jpg" alt="" class="all thriller">
-        <img src="../img/starwarsempire-1980-scifi.jpg" alt="" class="all scifi">
-        <img src="../img/Survivestyle5-2004-comedie.jpg" alt="" class="all comedie">
-        <img src="../img/swissarmyman-2016-comedie.jpg" alt="" class="all comedie">
-        <img src="../img/thefall-2006-dramatique.jpg" alt="" class="all drama">
-        <img src="../img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="" class="all comedie">
-        <img src="../img/zoolander-2001-comedie.jpg" alt="" class="all comedie">
-        <!-- connected to JS -->
+        <img src="../img/batmanmovie-2017-comedie.jpg" alt="" class="all comedie batman" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/hostel-2005-thriller.jpg" alt="" class="all thriller hostel" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/inception-2010-scifi.jpg" alt="" class="all scifi inception" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/lepatientanglais-1996-dramatique.jpg" alt="" class="all drama lepatient" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/lesdeuxtours-2002-aventure.jpg" alt="" class="all aventure lesdeuxtours" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/seven-1995-thriller.jpg" alt="" class="all thriller seven" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/shutterisland-2010-thriller.jpg" alt="" class="all thriller shutterisland" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/starwarsempire-1980-scifi.jpg" alt="" class="all scifi starwars" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/Survivestyle5-2004-comedie.jpg" alt="" class="all comedie survivestyle" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/swissarmyman-2016-comedie.jpg" alt="" class="all comedie swissarmyman" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/thefall-2006-dramatique.jpg" alt="" class="all drama thefall" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="" class="all comedie shadows morefilm" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/zoolander-2001-comedie.jpg" alt="" class="all comedie morefilm zoolander" data-toggle="modal" data-target="#imagemodal">
       </div>
-      <button id="moreFilms">More Movies</button>
+      <div class="btn-hide">
+        <button id="moreFilms">Plus de films</button>
+      </div>
     </div>
     <!-- test modal lors du clic sur image -->
     <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <iframe width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="trailer"></iframe>
+          <iframe src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="trailer"></iframe>
           <h2 id="movieTitle"></h2>
           <h3 id="movieYear"></h3>
           <h3 id="movieStyle"></h3>
           <div class="modal-body">
           </div>
           <div class="modal-footer">
-            <div class="col-xs-12">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
-    </div>
-    </div>
-    </div>
+
   </section>
   <section>
     <div class="container-row">
@@ -368,24 +364,23 @@
           <button id="comedieSerie">Comédie</button>
         </div>
         <!-- filter goes here -->
-        <img src="../img/batmanmovie-2017-comedie.jpg" alt="" class="allSerie comedieSerie">
-        <img src="../img/hostel-2005-thriller.jpg" alt="" class="allSerie thrillerSerie">
-        <img src="../img/inception-2010-scifi.jpg" alt="" class="allSerie scifiSerie">
-        <img src="../img/lepatientanglais-1996-dramatique.jpg" alt="" class="allSerie dramaSerie">
-        <img src="../img/lesdeuxtours-2002-aventure.jpg" alt="" class="allSerie aventureSerie">
-        <img src="../img/seven-1995-thriller.jpg" alt="" class="allSerie thrillerSerie">
-        <img src="../img/shutterisland-2010-thriller.jpg" alt="" class="allSerie thrillerSerie">
-        <img src="../img/starwarsempire-1980-scifi.jpg" alt="" class="allSerie scifiSerie">
-        <img src="../img/Survivestyle5-2004-comedie.jpg" alt="" class="allSerie comedieSerie">
-        <img src="../img/swissarmyman-2016-comedie.jpg" alt="" class="allSerie comedieSerie">
-        <img src="../img/thefall-2006-dramatique.jpg" alt="" class="allSerie dramaSerie">
-        <img src="../img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="" class="allSerie comedieSerie">
-        <img src="../img/zoolander-2001-comedie.jpg" alt="" class="allSerie comedieSerie">
-        <!-- connected to JS -->
+        <img src="../img/batmanmovie-2017-comedie.jpg" alt="" class="allSerie comedieSerie batman" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/hostel-2005-thriller.jpg" alt="" class="allSerie thrillerSerie hostel" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/inception-2010-scifi.jpg" alt="" class="allSerie scifiSerie inception" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/lepatientanglais-1996-dramatique.jpg" alt="" class="allSerie dramaSerie lepatient" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/lesdeuxtours-2002-aventure.jpg" alt="" class="allSerie aventureSerie lesdeuxtours" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/seven-1995-thriller.jpg" alt="" class="allSerie thrillerSerie seven" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/shutterisland-2010-thriller.jpg" alt="" class="allSerie thrillerSerie shutterisland" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/starwarsempire-1980-scifi.jpg" alt="" class="allSerie scifiSerie starwars" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/Survivestyle5-2004-comedie.jpg" alt="" class="allSerie comedieSerie survivestyle" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/swissarmyman-2016-comedie.jpg" alt="" class="allSerie comedieSerie swissarmyman" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/thefall-2006-dramatique.jpg" alt="" class="allSerie dramaSerie thefall" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="" class="allSerie comedieSerie moreserie shadows" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/zoolander-2001-comedie.jpg" alt="" class="allSerie comedieSerie moreserie zoolander" data-toggle="modal" data-target="#imagemodal">
       </div>
-      <button id="moreSeries">More Series</button>
-    </div>
-    </div>
+      <div class="btn-hide">
+        <button id="moreSeries">Plus de séries</button>
+      </div>
     </div>
   </section>
   <section>
@@ -408,14 +403,24 @@
           <img src="../img/zoolander-2001-comedie.jpg" alt="" id="zoolander-2001">
         </div>
         <div class="right col-12 col-md-4">
-          <button id="previous">previous</button>
-          <button id="next">next</button>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/2znBVEWdYsY" frameborder="0" allow="encrypted-media" allowfullscreen id="trailerShop"></iframe>
-          <h2 id="titleShop">Batman</h2>
-          <h3 id="yearShop">2017</h3>
-          <h3 id="genderShop">Comédie</h3>
-        </div>
+          <button class="pull-right" id="previous"><span class="glyphicon glyphicon-chevron-right"></span></button>
+          <button class="pull-right" id="next"><span class="glyphicon glyphicon-chevron-left"></span></button>
 
+          <iframe src="https://www.youtube.com/embed/2znBVEWdYsY" frameborder="0" allow="encrypted-media" allowfullscreen id="trailerShop"></iframe>
+
+          <div class="left col-6 col-md-6">
+            <h4 id="titleShop">Batman </h4>
+            <h5 id="yearShop">2017 :</h5>
+            <h5 id="genderShop">Comédie :</h5>
+          </div>
+          <div class="right col-6 col-md-6">
+            <p id="titleShop">Batman</p>
+            <p id="yearShop">2017</p>
+            <p id="genderShop">Comédie</p>
+          </div>
+
+
+        </div>
       </div>
     </div>
   </section>
