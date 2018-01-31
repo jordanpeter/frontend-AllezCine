@@ -563,3 +563,7 @@ hr {
     width: 300px;
   }
 }
+
+#figurine1, #totalVal, #delivery, #totalTTC{
+     color: black;
+}
