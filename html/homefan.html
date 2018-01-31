@@ -22,41 +22,56 @@
      <form>
           <img src="../img/wolverine/wolverine-figurine.jpg" alt="">
           5€
-          <input type="number" name="figurine" value="0,1,2...">
+          <input type="number" name="figurine" value="0" id="figurine1">
           <img src="../img/wolverine/wolverine-figurine2.jpg" alt="">
           3€
-          <input type="number" name="figurine" value="">
+          <input type="number" name="figurine" value="0" id="figurine2">
           <img src="../img/wolverine/wolverine-figurine3.jpg" alt="">
           2€
-          <input type="number" name="figurine" value="0,1,2...">
+          <input type="number" name="figurine" value="0" id="figurine3">
           <img src="../img/wolverine/wolverine-gadget.jpg" alt="">
           8€
-          <input type="number" name="figurine" value="">
+          <input type="number" name="figurine" value="0" id="figurine4">
           <p>
-          <input type="submit" value="Submit"></p>
-          Total
-          <input type="text" name="figurine" value="">
+          <input type="button" value="Total" id="totalButton"></p>
+          Total hors frais de livraison
+          <input type="text" name="figurine" value="" id="totalVal">
+          Frais de livraison:
+          <input type="text" name="frais" value="" id="delivery">
+          total TTC:
+          <input type="text" name="frais" value="" id="totalTTC">
    </form>
   <script>
-    $(window).scroll(function() { // arrow to go top
-      if ($(window).scrollTop() == 0) {
-        $('#scrollToTop').fadeOut("fast");
-      } else {
-        if ($('#scrollToTop').length == 0) {
-          $('body').append('<div id="scrollToTop">' + '<a href="#">Retour en haut</a>' + '</div>');
-        }
-        $('#scrollToTop').fadeIn("fast");
-      }
-    });
-    $('body').on('click', '#scrollToTop a', function(event) {
-      event.preventDefault();
-      $('html,body').animate({
-        scrollTop: 0
-      }, 'slow');
-    });
     $(document).ready(function() {
-
-});
+         // It gets the value from the input and put them in variables, then with different conditions it will be automaticaly calculate and the value will be display in inputs
+          $('#totalButton').on({'click': function(){
+               var item1 = $('#figurine1').val();
+               var item2 = $('#figurine2').val();
+               var item3 = $('#figurine3').val();
+               var item4 = $('#figurine4').val();
+               var total = (item1*5)+(item2*3)+(item3*2)+(item4*8);
+               console.log(total);
+               $('#totalVal').attr('value', total+" €");
+               if(total>0 && total < 15){
+                    var frais = 10;
+                    $('#delivery').attr('value', '10€ de frais de livraison');
+               }
+               else if (total>15 && total <= 30){
+                    var frais = 7;
+                    $('#delivery').attr('value', '7€ de frais de livraison');
+               }
+               else if (total>30){
+                    var frais = 0;
+                    $('#delivery').attr('value', 'GRATIS');
+               }
+               else{
+                    alert('Im the seller, i take your money you dont take mine');
+                    $('#delivery').attr('value', 'NOT GRATIS MATE');
+               }
+               var totalTTC= total+frais;
+               $('#totalTTC').attr('value', totalTTC+" €");
+          }})
+     });
   </script>
 </body>
 
