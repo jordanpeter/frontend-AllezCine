@@ -1,12 +1,82 @@
 body {
   margin: 0;
   padding: 0;
-  color: white !important;
   position: relative !important;
 }
 
-.first-page {
-  font-family: 'Open Sans', sans-serif !important;
+#socialbutton {
+  position: fixed;
+  top: 300px;
+  z-index: 999;
+}
+
+#socialbutton ul {
+  margin: 0;
+  padding: 0;
+  width: 125px;
+}
+
+#socialbutton li {
+  margin: 0 0 5px 0;
+  padding: 5px;
+  position: relative;
+  left: -90px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: right;
+}
+
+#socialbutton li:hover {
+  left: 0;
+}
+
+#socialbutton li:nth-child(1) {
+  background-color: lightblue;
+}
+
+#socialbutton li:nth-child(1) a i {
+  color: lightblue;
+}
+
+#socialbutton li:nth-child(2) {
+  background-color: blue;
+}
+
+#socialbutton li:nth-child(2) a i {
+  color: blue;
+}
+
+#socialbutton li:nth-child(3) {
+  background-color: pink;
+}
+
+#socialbutton li:nth-child(3) a i {
+  color: pink;
+}
+
+#socialbutton li:nth-child(4) {
+  background-color: red;
+}
+
+#socialbutton li:nth-child(4) a i {
+  color: red;
+}
+
+#socialbutton li a {
+  color: white;
+}
+
+#socialbutton li a:hover {
+  text-decoration: none;
+}
+
+#socialbutton li a i {
+  width: 26px;
+  height: 26px;
+  padding: 5px;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .navbar-default {
@@ -14,6 +84,8 @@ body {
   border-color: transparent!important;
   padding: 1em 2em;
 }
+
+/*hamburger*/
 
 .icon-bar {
   background-color: red !important;
@@ -25,7 +97,18 @@ body {
 }
 
 .navbar-default li a:hover {
+  color: white !important;
   background-color: red !important;
+  width: 100px;
+  height: 60px;
+}
+
+.navbar-default li a:focus {
+  color: red !important;
+}
+
+.navbar-default li a:active {
+  color: white !important;
 }
 
 .navbar-default .navbar-nav .active a {
@@ -45,6 +128,19 @@ body {
 
 .navbar-nav {
   font-size: .8em !important;
+}
+
+.menu {
+  background-color: grey;
+  width: 100px;
+  height: 60px;
+  margin: 5px;
+}
+
+.home {
+  width: 100px;
+  height: 60px;
+  margin: 5px;
 }
 
 .dropdown-menu a {
@@ -70,44 +166,78 @@ body {
   border-color: transparent !important;
 }
 
+.container-row {
+  width: 75% !important;
+  margin: 0 auto;
+  color: black !important;
+}
+
+#featuredMovies h1, #featuredSeries h1, #shopMovies h1, #contactUs h1 {
+  color: black !important;
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  text-transform: uppercase;
+  font-weight: bold!important;
+  letter-spacing: 0.05em;
+  border-left: red solid thick;
+  padding: 15px;
+}
+
+#shopMovies h1 {
+  margin-left: 80px;
+}
+
+/*text positioning in fading images*/
+
+.fiveImages {
+  margin: 50px;
+  border: 1px lightgrey solid !important;
+}
+
+.fiveImages p {
+  width: 130px;
+  margin: 0;
+}
+
+.rightText {
+  position: relative;
+  left: 40px;
+}
+
+.yearGenre {
+  font-size: 12px;
+}
+
 .jumbotron {
-  background-image: url(../img/me-before-you.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-color: black;
-  background-blend-mode: screen;
   padding: 0 !important;
-  margin-left: 0 !important;
-  background-color: transparent !important;
+  margin: 0 !important;
+  background: rgba(121, 43, 57, 0.5) !important;
   width: 100%;
   height: 100%;
+  border-radius: 0 !important;
 }
+
+/*red text*/
 
 .red {
   color: red !important;
 }
 
-.slide1, .slide2, .slide3 {
-  width: 100vw;
-  height: auto;
-  background-size: cover;
-  background-position: center center;
+.red p {
+  font-size: 1.2em;
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
-.slide1 {
-  background-image: url(../img/me-before-you.jpg);
+.navbar {
+  position: fixed;
+  z-index: 999;
 }
 
-.slide2 {
-  background-image: url(../img/zoolander.jpg);
-}
-
-.slide3 {
-  background-image: url(../img/me-before-you.jpg);
-}
-
-.slide4 {
-  background-image: url(../img/me-before-you.jpg);
+#myCarousel {
+  margin-top: -150px;
+  z-index: 1;
 }
 
 .carousel-indicators .active {
@@ -145,13 +275,14 @@ body {
 }
 
 .container-red {
-  background-color: red;
+  background-color: red !important;
   width: 100vw;
-  height: 50px;
 }
 
 .container-red p {
+  color: white !important;
   margin-left: 50px;
+  padding: 15px;
 }
 
 .container-fluid {
@@ -159,12 +290,12 @@ body {
   padding: 0 !important;
 }
 
-.container-fluid h1 {
+.container-red h1, #myCarousel h1 {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.container-fluid p {
+.container-red p, #myCarousel p {
   text-transform: uppercase;
   font-size: 10px !important;
   font-weight: lighter !important;
@@ -181,22 +312,47 @@ body {
 
 .btn.btn-primary {
   text-transform: uppercase;
-  margin: 10px;
+  font-weight: bold;
   background-color: red !important;
   border-radius: 0 !important;
   border-color: red !important;
 }
 
-footer {
-  background-color: rgb(73, 70, 70);
+.filter-button button {
+  margin: 0;
+  background-color: lightgrey !important;
+  border-radius: 0 !important;
+  border-color: transparent!important;
+  padding: 10px;
+}
+
+.filter-button button:hover, .filter-button button:focus {
+  background: red !important;
+  padding: 10px;
+  border-color: transparent !important;
+  text-shadow: none !important;
+}
+
+.btn-hide {
+  text-align: center;
+}
+
+.btn-hide button {
+  text-transform: uppercase;
+  color: white !important;
+  font-weight: bold;
+  background-color: red !important;
+  border-radius: 0 !important;
+  border-color: transparent!important;
+  padding: 10px;
 }
 
 .slideshow {
   margin: 50px auto;
   position: relative;
-  width: 240px;
-  height: 240px;
-  padding: 10px;
+  width: 130px;
+  height: 180px;
+  padding: 20px;
 }
 
 .slideshow>div {
@@ -207,19 +363,203 @@ footer {
   bottom: 10px;
 }
 
-img {
-  width: 100px;
-  height: 140px;
-  margin: 10px 15px;
+.item img {
+  width: 100%;
+  height: 25%;
+  padding: 0;
+  margin: 0;
+  filter: brightness(45%);
 }
 
-#scrollToTop a{
-    background-image: url("http://www.cstb.fr/dae/fileadmin/default/templates/images/Back_to_Top.png");
-    background-repeat: no-repeat;
-    bottom: 10px;
-    height: 51px;
-    position: fixed;
-    right: 101px;
-    text-indent: -50000px;
-    width: 57px;
+img {
+  width: 130px;
+  height: 180px;
+  margin: 10px 5px;
+}
+
+hr {
+  border: .5px solid #777474 !important;
+  width: 100%;
+  margin: 10px 0 25px 0 !important;
+  !important;
+  padding: 0;
+}
+
+footer {
+  background-color: #2d2d2d;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .subscribe2 p {
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  color: white !important;
+  font-weight: bold;
+}
+
+footer .subscribe input {
+  border-radius: 0 !important;
+  margin: 5px auto;
+}
+
+footer .subscribe button {
+  margin: 5px auto;
+}
+
+footer .connect-social li {
+  padding: 5px;
+  margin: 5px;
+  display: inline;
+  border: white thin solid;
+}
+
+footer li a i {
+  color: white;
+  width: 15px;
+  height: 15px;
+}
+
+hr {
+  width: 100%;
+}
+
+.connect-social ul {
+  margin-left: -40px !important;
+}
+
+.connect-social p {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: grey;
+}
+
+.subscribe2 {
+  margin: 20px auto;
+}
+
+.subscribe2 ul {
+  margin: 0;
+  padding: 0;
+}
+
+.subscribe2 li {
+  text-align: left !important;
+  list-style: none;
+  color: grey !important;
+}
+
+.review ul li {
+  display: inline;
+  text-align: left !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px;
+  margin
+}
+
+#shopMovies .right {
+  padding: 0;
+  margin-top: 10px;
+  background-color: black !important;
+  height: 100%;
+  color: white !important;
+}
+
+#shopMovies .right button {
+  margin-top: -25px;
+  border-radius: 0 !important;
+  border-color: transparent!important;
+  background-color: black !important;
+  color: white !important;
+}
+
+#shopMovies .right h4 {
+  text-transform: uppercase;
+  color: red !important;
+  font-weight: bold;
+}
+
+#shopMovies .right h5 {
+  color: red !important;
+  font-weight: bold;
+}
+
+#shopMovies .right iframe {
+  width: 100%;
+  height: auto;
+}
+
+/*pop-ups windows ____________________________________________*/
+
+.modal-header {
+  text-align: center;
+  text-transform: uppercase !important;
+  font-style: 'Open Sans Condensed', sans-serif !important;
+}
+
+.modal-header h4 {
+  color: red !important;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.modal-header p {
+  color: black !important;
+  text-align: left;
+}
+
+.modal-header input {
+  padding: 5px;
+  margin: 10px;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-body input {
+  padding: 5px;
+  margin: 10px;
+}
+
+.modal-body p {
+  color: black !important;
+  margin: 0 !important;
+}
+
+.modal-footer button {
+  font-weight: bold;
+  color: white !important;
+  text-transform: uppercase;
+  background-color: red !important;
+  border-radius: 0 !important;
+  border-color: transparent!important;
+  padding: 10px;
+}
+
+.modal.fade {
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-style: 'Open Sans Condensed', sans-serif !important;
+}
+
+.modal-content iframe {
+  border: 1px black solid;
+  margin: 20px;
+  display: relative;
+  width: 500px;
+  height: auto;
+}
+
+@media only screen and (max-width:768px) {
+  .modal-content iframe {
+    width: 150px;
+    height: auto;
+  }
+  .modal.fade {
+    margin: 0 auto;
+    width: 300px;
+  }
 }

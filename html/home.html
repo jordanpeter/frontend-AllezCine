@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="../css/home.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,277 +15,299 @@
   <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
   <script src="../js/jquery-2.2.4.js"></script>
   <script src="../js/cookiechoices.js"></script>
-
   <title>AllezCine!</title>
 </head>
 
 <body>
-  <div class="first-page">
-    <header>
-      <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+  <div id="socialbutton">
+    <ul>
+      <li><a href="#"> Twitter <i class="fa fa-twitter " aria-hidden="true "></i> </a></li>
+      <li> <a href="#"> Facebook <i class="fa fa-facebook " aria-hidden="true "></i> </a> </li>
+      <li> <a href="# "> YouTube <i class="fa fa-youtube " aria-hidden="true "></i> </a> </li>
+      <li> <a href="# "> Google+ <i class="fa fa-google-plus " aria-hidden="true "></i> </a> </li>
+    </ul>
+  </div>
+
+  <!-- NAVIGATION_____________________________________ -->
+  <header>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-            <a class="navbar-brand" href="#"><span class="red">Allez</span>Cine!</a>
-          </div>
+          <a class="navbar-brand" href="#"><span class="red">Allez</span>Cine!</a>
+        </div>
 
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li><a href="#home" class="active">Home</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Genre <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Comedy</a></li>
-                  <li><a href="#">Western</a></li>
-                  <li><a href="#">Fiction</a></li>
-                </ul>
-                <li><a href="#featuredMovies">Featured Movies</a></li>
-                <li><a href="#featuredSeries">Featured Series</a></li>
-                <li><a href="#shopMovies">Shop movies</a></li>
-                <li><a href="#contactUs">Contact Us</a></li>
-            </ul>
-            <form class="navbar-form navbar-right" role="search">
-              <div class="input-group">
-                <input type="text" class="form-control pull-right" placeholder="Recherche">
-                <span class="input-group-btn ">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="home"><a href="#home" class="active">Home</a></li>
+            <li class="dropdown menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Genre <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#drama">Drama</a></li>
+                <li><a href="#comedie">Comedy</a></li>
+                <li><a href="#scifi">Sci-Fi</a></li>
+                <li><a href="#aventure">Adventure</a></li>
+              </ul>
+              <li class="menu"><a href="#featuredMovies">Featured Movies</a></li>
+              <li class="menu"><a href="#featuredSeries">Featured Series</a></li>
+              <li class="menu"><a href="#shopMovies">Shop movies</a></li>
+              <li class="home"><a href="#contactUs">Contact Us</a></li>
+          </ul>
+          <form class="navbar-form navbar-right" role="search">
+            <div class="input-group">
+              <input type="text" class="form-control pull-right" placeholder="Recherche">
+              <span class="input-group-btn ">
                   <button type="submit " class="btn btn-default ">
 								<span class="glyphicon glyphicon-search ">
 									<span class="sr-only ">Search</span>
-                </span>
-                </button>
-                </span>
-              </div>
-            </form>
-          </div>
-          <!-- /.navbar-collapse -->
+              </span>
+              </button>
+              </span>
+            </div>
+          </form>
         </div>
-        <!-- /.container-fluid -->
-      </nav>
-    </header>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+  <section id="home " class="container-fluid ">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class=" jumbotron carousel-inner">
+        <div class="item active">
+          <img src="../img/me-before-you-700.jpg" alt="Me before You">
+          <div class="carousel-caption">
+            <h1> <strong>Latest <span class="red">On</span>line <span class="red">Mo</span>vies</strong></h1>
+            <p>In space no one can hear you scream</p>
+            <a class="btn btn-primary btn-md " href="# " role="button ">Watch Trailer</a>
+          </div>
+        </div>
 
-    <section id="home " class="container-fluid ">
-      <div class="container ">
-        <div class="row ">
+        <div class="item">
+          <img src="../img/zoolandertest.jpg" alt="Zoolander">
+          <div class="carousel-caption">
+            <h1> <strong>Latest <span class="red">On</span>line <span class="red">Mo</span>vies</strong></h1>
+            <p>In space no one can hear you scream</p>
+            <a class="btn btn-primary btn-md " href="# " role="button ">Watch Trailer</a>
+          </div>
+        </div>
 
-          <div id="myCarousel " class=" carousel slide carousel-fade " data-ride="carousel ">
-            <!-- <ol class="carousel-indicators ">
-              <li data-target="#myCarousel " data-slide-to="0 " class="active "></li>
-              <li data-target="#myCarousel " data-slide-to="1 "></li>
-              <li data-target="#myCarousel " data-slide-to="2 "></li>
-              <li data-target="#myCarousel " data-slide-to="3 "></li>
-            </ol> -->
-            <div class="carousel-inner ">
-              <div class="item active ">
-                <div class="slide1 "></div>
-              </div>
-              <div class="item ">
-                <div class="slide2 "></div>
-              </div>
-              <div class="item ">
-                <div class="slide3 "></div>
-              </div>
-              <div class="item ">
-                <div class="slide4 "></div>
-              </div>
-            </div>
-            <!-- .carousel-inner -->
-            <div class="col-md-12 jumbotron container carousel-overlay text-center ">
-              <h1> <strong>Latest <span class="red">On</span>line <span class="red">Mo</span>vies</strong></h1>
-              <p>In space no one can hear you scream</p>
-              <a class="btn btn-primary btn-md " href="# " role="button ">Watch Trailer</a>
+        <div class="item">
+          <img src="../img/batman700.jpg" alt="Batman">
+          <div class="carousel-caption">
+            <h1> <strong>Latest <span class="red">On</span>line <span class="red">Mo</span>vies</strong></h1>
+            <p>In space no one can hear you scream</p>
+            <a class="btn btn-primary btn-md " href="# " role="button ">Watch Trailer</a>
+          </div>
+        </div>
 
-            </div>
-
+        <div class="item">
+          <img src="../img/star_wars700.jpg" alt="Star Wars">
+          <div class="carousel-caption">
+            <h1> <strong>Latest <span class="red">On</span>line <span class="red">Mo</span>vies</strong></h1>
+            <p>In space no one can hear you scream</p>
+            <a class="btn btn-primary btn-md " href="# " role="button ">Watch Trailer</a>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container-red">
-        <p><i class="fa fa-phone" aria-hidden="true"></i> (+000) 009 455 4088 <button type="button" class="btn btn-primary black" data-toggle="modal" data-target="#exampleModalCenter">
+
+    <div class="container-red">
+      <p><i class="fa fa-phone" aria-hidden="true"></i> (+000) 009 455 4088 <button type="button" class="btn btn-primary black" data-toggle="modal" data-target="#exampleModalCenter">
                  Login
                </button> <button type="button" class="btn btn-primary black" data-toggle="modal" data-target="#myModal">
                        Register
                       </button></p>
-        <!-- Button trigger modal -->
+      <!-- Button trigger modal -->
 
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <p>
-                  <h4 class="modal-title">Login</h4></p>
-                <form action="">
-                  Login
-                  <input type="text"> Password
-                  <input type="password"> Rester connecté
-                  <input type="checkbox">
-                  <br><br>
-                  <a href="../html/index.html">Mot de passe oublié.</a>
-                  <br><br>
-                  <a href="../html/home.html">Cancel</a>
-                </form>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Please Log-in</h4>
+              <form action="">
+                <input type="text" placeholder="Login">
+                <input type="password" placeholder="Password">
+                <p>Stay Connected <input type="checkbox"></p>
+                <p> <a href="../html/index.html">Forgot password?</a>
+                </p>
+                <p> <a href="../html/home.html">Cancel</a>
+                </p>
+              </form>
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                          <span aria-hidden="true">&times;</span>
                        </button>
-              </div>
+            </div>
 
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal" data-target="#myModal">Créer un compte</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close/Sumbit/Login</button>
-              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" data-target="#myModal">Create an account</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Login</button>
             </div>
           </div>
         </div>
+      </div>
 
 
 
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
-          <div class="modal-dialog">
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
 
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Register</h4>
-              </div>
-              <div class="modal-body">
-                Name
-                <input type="text">
-                <br><br> Password
-                <input type="password"> Confirm Password
-                <input type="password">
-                <br><br> Conditions générales d'utilisation
-                <select id="monselect">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Register</h4>
+            </div>
+            <div class="modal-body">
+
+              <input type="text" placeholder="Name">
+
+              <input type="password" placeholder="Password">
+              <input type="password" placeholder="Confirm Password">
+              <p>Conditions générales d'utilisation</p>
+              <select id="monselect">
                            <option value="valeur1">Lu et approuvé</option>
                            <option value="valeur2" selected>Non approuvé</option>
                          </select>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Register</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Register</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="fiveImages">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-2 col-12">
-              <div class="slideshow">
-                <div>
-                  <img src="../img/batmanmovie-2017-comedie.jpg" alt="" class="batman" data-toggle="modal" data-target="#imagemodal">
-                  <div class="row text-center">
-                    <div class="col-md-7 col-12 movieName">Batman</div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-2 col-12">2017</div>
-                    <div class="col-md-4 col-12">Comédie</div>
-                  </div>
-                </div>
-                <div>
-                  <img src="../img/hostel-2005-thriller.jpg" alt="" class="hostel" data-toggle="modal" data-target="#imagemodal">
-                  <div class="row text-center">
-                    <div class="col-md-7 col-12 movieName">Hostel</div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-2 col-12">2005</div>
-                    <div class="col-md-4 col-12">Thriller</div>
-                  </div>
-                </div>
-                <div>
-                  <img src="../img/lesdeuxtours-2002-aventure.jpg" alt="" class="lesdeuxtours" data-toggle="modal" data-target="#imagemodal">
-                  <div class="row text-center">
-                    <div class="col-md-7 col-12 movieName">Les deux tours</div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-2 col-12">2002</div>
-                    <div class="col-md-4 col-12">aventure</div>
-                  </div>
-                </div>
-              </div>
+    </div>
+    <!-- fading 5 images are starting here -->
+    <div class="fiveImages">
+      <div class="container-row">
+
+        <div class=" col-6 col-md-2">
+          <div class="slideshow">
+            <div>
+              <img src="../img/batmanmovie-2017-comedie.jpg" alt="">
+              <p style="text-align:center">Batman</p>
+              <p class="yearGenre">2017 <span class="rightText">Comedie</span> </p>
             </div>
-
-
-            <div class="col-md-2 col-12">
-              <div class="slideshow">
-                <div>
-                  <img src="../img/lepatientanglais-1996-dramatique.jpg" alt="" class="lepatient" data-toggle="modal" data-target="#imagemodal">
-                </div>
-                <div>
-                  <img src="../img/lesdeuxtours-2002-aventure.jpg" alt="" class="lesdeuxtours" data-toggle="modal" data-target="#imagemodal">
-                </div>
-                <div>
-                  <img src="../img/seven-1995-thriller.jpg" alt="" class="seven" data-toggle="modal" data-target="#imagemodal">
-                </div>
-              </div>
+            <div>
+              <img src="../img/hostel-2005-thriller.jpg" alt="">
+              <p style="text-align:center">Hostel</p>
+              <p class="yearGenre">2005 <span class="rightText">Thriller</span> </p>
             </div>
-
-
-            <div class="col-md-2 col-12">
-              <div class="slideshow">
-                <div>
-                  <img src="../img/shutterisland-2010-thriller.jpg" alt="" class="shutterisland" data-toggle="modal" data-target="#imagemodal">
-                </div>
-                <div>
-                  <img src="../img/starwarsempire-1980-scifi.jpg" alt="" class="starwars" data-toggle="modal" data-target="#imagemodal">
-                </div>
-                <div>
-                  <img src="../img/Survivestyle5-2004-comedie.jpg" alt="" class="survivestyle" data-toggle="modal" data-target="#imagemodal">
-                </div>
-              </div>
+            <div>
+              <img src="../img/lesdeuxtours-2002-aventure.jpg" alt="">
+              <p style="text-align:center">Les deux tours</p>
+              <p class="yearGenre">2002 <span class="rightText">Aventure</span> </p>
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-2 col-12">
-              <div class="slideshow">
-                <div>
-                  <img src="../img/swissarmyman-2016-comedie.jpg" alt="" class="swissarmyman" data-toggle="modal" data-target="#imagemodal">
-                </div>
-                <div>
-                  <img src="../img/thefall-2006-dramatique.jpg" alt="" class="thefall" data-toggle="modal" data-target="#imagemodal">
-                </div>
-                <div>
-                  <img src="../img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="" class="shadows" data-toggle="modal" data-target="#imagemodal">
-                </div>
-              </div>
+
+        <div class="col-6 col-md-2">
+          <div class="slideshow">
+            <div>
+              <img src="../img/lepatientanglais-1996-dramatique.jpg" alt="">
+              <p style="text-align:center">Le Patient Anglais</p>
+              <p class="yearGenre">1996 <span class="rightText">Dramatique</span> </p>
             </div>
-            <div class="col-md-2 col-12">
-              <div class="slideshow">
-                <div>
-                  <img src="../img/swissarmyman-2016-comedie.jpg" alt="" class="swissarmyman" data-toggle="modal" data-target="#imagemodal">
-                </div>
-                <div>
-                  <img src="../img/seven-1995-thriller.jpg" alt="" class="seven" data-toggle="modal" data-target="#imagemodal">
-                </div>
-                <div>
-                  <img src="../img/zoolander-2001-comedie.jpg" alt="" class="zoolander" data-toggle="modal" data-target="#imagemodal">
-                </div>
-              </div>
+            <div>
+              <img src="../img/lesdeuxtours-2002-aventure.jpg" alt="">
+              <p style="text-align:center">Les deux tours</p>
+              <p class="yearGenre">2002 <span class="rightText">Aventure</span> </p>
+            </div>
+            <div>
+              <img src="../img/seven-1995-thriller.jpg" alt="">
+              <p style="text-align:center">Les deux tours</p>
+              <p class="yearGenre">2005 <span class="rightText">Aventure</span> </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class=" col-6 col-md-2">
+          <div class="slideshow">
+            <div>
+              <img src="../img/shutterisland-2010-thriller.jpg" alt="">
+              <p style="text-align:center">Shutter Island</p>
+              <p class="yearGenre">2010 <span class="rightText">Thriller</span> </p>
+            </div>
+            <div>
+              <img src="../img/starwarsempire-1980-scifi.jpg" alt="">
+              <p style="text-align:center">Star Wars Empire</p>
+              <p>1980 <span class="rightText">Scifi</span> </p>
+            </div>
+            <div>
+              <img src="../img/Survivestyle5-2004-comedie.jpg" alt="">
+              <p style="text-align:center">Survive Style</p>
+              <p class="yearGenre">2004<span class="rightText">Comedie</span> </p>
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-6 col-md-2">
+          <div class="slideshow">
+            <div>
+              <img src="../img/swissarmyman-2016-comedie.jpg" alt="">
+              <p style="text-align:center">Swiss Army man</p>
+              <p class="yearGenre">2016 <span class="rightText">Comedie</span> </p>
+            </div>
+            <div>
+              <img src="../img/thefall-2006-dramatique.jpg" alt="">
+              <p style="text-align:center">The Fall</p>
+              <p class="yearGenre">2006 <span class="rightText">Dramatique</span> </p>
+            </div>
+            <div>
+              <img src="../img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="">
+              <p style="text-align:center; font-size:12px">What We Do in Shadows</p>
+              <p class="yearGenre">2014 <span class="rightText">Comedie</span> </p>
+            </div>
+          </div>
+        </div>
+        <div class=" col-6 col-md-2">
+          <div class="slideshow">
+            <div>
+              <img src="../img/swissarmyman-2016-comedie.jpg" alt="">
+              <p style="text-align:center">Swiss Army Man</p>
+              <p class="yearGenre">2016 <span class="rightText">Comedie</span> </p>
+            </div>
+            <div>
+              <img src="../img/seven-1995-thriller.jpg" alt="">
+              <p style="text-align:center">Seven</p>
+              <p>1995 <span class="rightText">Thriller</span> </p>
+            </div>
+            <div>
+              <img src="../img/zoolander-2001-comedie.jpg" alt="">
+              <p style="text-align:center">Zoolander</p>
+              <p class="yearGenre">2001 <span class="rightText">Comedie</span> </p>
             </div>
           </div>
         </div>
       </div>
-  </div>
+    </div>
   </section>
   <section>
-    <div class="container">
+    <div class="container-row">
       <div class="row" id="featuredMovies">
         <h1>Featured Movies</h1>
-        <div>
+        <div class="filter-button">
           <button id="all">All</button>
           <button id="thriller">Thriller</button>
           <button id="scifi">Sciences Fiction</button>
@@ -305,33 +327,35 @@
         <img src="../img/Survivestyle5-2004-comedie.jpg" alt="" class="all comedie survivestyle" data-toggle="modal" data-target="#imagemodal">
         <img src="../img/swissarmyman-2016-comedie.jpg" alt="" class="all comedie swissarmyman" data-toggle="modal" data-target="#imagemodal">
         <img src="../img/thefall-2006-dramatique.jpg" alt="" class="all drama thefall" data-toggle="modal" data-target="#imagemodal">
-        <img src="../img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="" class="all comedie shadows" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="" class="all comedie shadows morefilm" data-toggle="modal" data-target="#imagemodal">
         <img src="../img/zoolander-2001-comedie.jpg" alt="" class="all comedie morefilm zoolander" data-toggle="modal" data-target="#imagemodal">
       </div>
-           <button id="moreFilms">Plus de films</button>
+      <div class="btn-hide">
+        <button id="moreFilms">Plus de films</button>
+      </div>
     </div>
-     <!-- test modal lors du clic sur image -->
+    <!-- test modal lors du clic sur image -->
     <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-           <iframe width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="trailer"></iframe>
-           <h2 id="movieTitle"></h2>
-           <h3 id="movieYear"></h3><h3 id="movieStyle"></h3>
-        <div class="modal-body">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <iframe src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="trailer"></iframe>
+          <h2 id="movieTitle"></h2>
+          <h3 id="movieYear"></h3>
+          <h3 id="movieStyle"></h3>
+          <div class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
         </div>
-     <div class="modal-footer">
-       <div class="col-xs-12">
-           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-       </div>
-     </div>
-   </div>
- </div>
+      </div>
+
   </section>
   <section>
-    <div class="container">
+    <div class="container-row">
       <div class="row" id="featuredSeries">
         <h1>Featured Series TV</h1>
-        <div>
+        <div class="filter-button">
           <button id="allSerie">All</button>
           <button id="thrillerSerie">Thriller</button>
           <button id="scifiSerie">Sciences Fiction</button>
@@ -351,10 +375,12 @@
         <img src="../img/Survivestyle5-2004-comedie.jpg" alt="" class="allSerie comedieSerie survivestyle" data-toggle="modal" data-target="#imagemodal">
         <img src="../img/swissarmyman-2016-comedie.jpg" alt="" class="allSerie comedieSerie swissarmyman" data-toggle="modal" data-target="#imagemodal">
         <img src="../img/thefall-2006-dramatique.jpg" alt="" class="allSerie dramaSerie thefall" data-toggle="modal" data-target="#imagemodal">
-        <img src="../img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="" class="allSerie comedieSerie shadows" data-toggle="modal" data-target="#imagemodal">
+        <img src="../img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="" class="allSerie comedieSerie moreserie shadows" data-toggle="modal" data-target="#imagemodal">
         <img src="../img/zoolander-2001-comedie.jpg" alt="" class="allSerie comedieSerie moreserie zoolander" data-toggle="modal" data-target="#imagemodal">
       </div>
-      <button id="moreSeries">Plus de séries</button>
+      <div class="btn-hide">
+        <button id="moreSeries">Plus de séries</button>
+      </div>
     </div>
   </section>
   <section>
@@ -377,18 +403,29 @@
           <img src="../img/zoolander-2001-comedie.jpg" alt="" id="zoolander-2001">
         </div>
         <div class="right col-12 col-md-4">
-          <button id="previous">previous</button>
-          <button id="next">next</button>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/2znBVEWdYsY" frameborder="0" allow="encrypted-media" allowfullscreen id="trailerShop"></iframe>
-          <h2 id="titleShop">Batman</h2>
-          <h3 id="yearShop">2017</h3>
-          <h3 id="genderShop">Comédie</h3>
+          <button class="pull-right" id="previous"><span class="glyphicon glyphicon-chevron-right"></span></button>
+          <button class="pull-right" id="next"><span class="glyphicon glyphicon-chevron-left"></span></button>
+
+          <iframe src="https://www.youtube.com/embed/2znBVEWdYsY" frameborder="0" allow="encrypted-media" allowfullscreen id="trailerShop"></iframe>
+
+          <div class="left col-6 col-md-6">
+            <h4 id="titleShop">Batman </h4>
+            <h5 id="yearShop">2017 :</h5>
+            <h5 id="genderShop">Comédie :</h5>
+          </div>
+          <div class="right col-6 col-md-6">
+            <p id="titleShop">Batman</p>
+            <p id="yearShop">2017</p>
+            <p id="genderShop">Comédie</p>
+          </div>
+
+
         </div>
       </div>
     </div>
   </section>
   <section>
-    <div class="container">
+    <div class="container-row">
       <div class="row" id="contactUs">
         <h1>Contact us</h1>
         <form>
@@ -417,40 +454,97 @@
       </div>
     </div>
   </section>
+  <!-- FOOTER_______________________________________ -->
   <footer>
     <div class="container ">
-      <div class="row ">
-        <div class="subscribe col-12 col-md-12 ">
-          <div class="col-6 col-md-6 ">
-            <input type="text " class="form-control " id="subscribe" placeholder="Enter email ">
+      <div class="row">
+        <div class="red">
+          <p>Subscribe to us</p>
+        </div>
+        <div class="subscribe col-12 col-md-12  ">
+          <div class="col-12 col-md-8">
+            <input type="text " class="form-control " id="subscribe " placeholder="Enter email ">
           </div>
-          <div class="col-6 col-md-6 ">
-            <button type="subscribe" class="btn btn-primary subscribeBtn">Subscribe to us</button>
+          <div class="col-12 col-md-4">
+            <button href="# " type="subscribe " class="btn btn-primary subscribeBtn">Subscribe</button>
           </div>
-
         </div>
         <div class="subscribe2 col-12 col-md-12 ">
           <div class="release col-6 col-md-2 ">
             <p>release</p>
+            <div>
+              <hr>
+            </div>
+            <ul>
+              <li>2016</li>
+              <li>2015</li>
+              <li>2014</li>
+              <li>2013</li>
+              <li>2012</li>
+              <li>2011</li>
+            </ul>
           </div>
-          <div class="release col-6 col-md-2 ">
+          <div class="movies col-6 col-md-2 ">
             <p>movies</p>
+            <div>
+              <hr>
+            </div>
+            <ul>
+              <li>Thriller</li>
+              <li>Comedie</li>
+              <li>Drama</li>
+              <li>Sci-fi</li>
+              <li>Adventure</li>
+            </ul>
           </div>
-          <div class="release col-6 col-md-2 ">
+          <div class="review col-6 col-md-3 ">
             <p>review movies</p>
+            <div>
+              <hr>
+            </div>
+            <ul>
+              <li>Thriller</li>
+              <li>Comedie</li>
+              <li>Drama</li>
+              <li>Sci-fi</li>
+              <li>Adventure</li>
+              <li>Horror</li>
+              <li>Cartoon</li>
+              <li>Historical</li>
+              <li>Love</li>
+            </ul>
           </div>
-          <div class="release col-6 col-md-2 ">
+          <div class="latest col-6 col-md-2 ">
             <p>latest movies</p>
+            <div>
+              <hr>
+            </div>
           </div>
-          <div class="release col-12 col-md-2 ">
+          <div class="images col-12 col-md-3 ">
             <p>AllezCine!</p>
+            <div>
+              <hr>
+            </div>
           </div>
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+        </div>
+        <div>
+          <hr>
+        </div>
+        <div>
+          <hr>
         </div>
         <div class="connect-social col-12 col-md-12 ">
+
           <p>Connect us</p>
           <div class="col-12 col-md-12 ">
             <ul>
-              <li> <a href="https://www.facebook.com/DivinoBarRestaurant/ "><i class="fa fa-facebook " aria-hidden="true "></i> </a> </li>
+              <li> <a href="# "><i class="fa fa-facebook " aria-hidden="true "></i> </a> </li>
               <li> <a href="# "><i class="fa fa-twitter " aria-hidden="true "></i> </a> </li>
               <li> <a href="# "><i class="fa fa-linkedin " aria-hidden="true "></i> </a> </li>
               <li> <a href="# "><i class="fa fa-youtube " aria-hidden="true "></i> </a> </li>
@@ -463,27 +557,25 @@
     </div>
   </footer>
   <script>
-  $(window).scroll(function() { // arrow to go top
+    $(window).scroll(function() { // arrow to go top
       if ($(window).scrollTop() == 0) {
-         $('#scrollToTop').fadeOut("fast");
+        $('#scrollToTop').fadeOut("fast");
       } else {
-         if ($('#scrollToTop').length == 0) {
-              $('body').append('<div id="scrollToTop">' + '<a href="#">Retour en haut</a>' + '</div>');
-         }
-         $('#scrollToTop').fadeIn("fast");
+        if ($('#scrollToTop').length == 0) {
+          $('body').append('<div id="scrollToTop">' + '<a href="#">Retour en haut</a>' + '</div>');
+        }
+        $('#scrollToTop').fadeIn("fast");
       }
-  });
-  $('body').on('click', '#scrollToTop a', function(event) {
+    });
+    $('body').on('click', '#scrollToTop a', function(event) {
       event.preventDefault();
       $('html,body').animate({
-         scrollTop: 0
+        scrollTop: 0
       }, 'slow');
-  });
-
+    });
     $(document).ready(function() {
-
       $('.morefilm').hide();
-       $('.moreserie').hide();
+      $('.moreserie').hide();
       $('#formLogin').hide();
       $('#login').on('click', function() {
         $('#formLogin').show();
@@ -539,42 +631,40 @@
       })
       //End Series Filters
       //Button More Films
-      $('#moreFilms').on('click',function(){
-			var iteration=$(this).data('iteration')||1
-			switch ( iteration) {
-				case 1:
-					$('.morefilm').show();
-                         document.getElementById("moreFilms").innerHTML = "Moins de films";
-					break;
-
-				case 2:
-					$('.morefilm').hide();
-                         document.getElementById("moreFilms").innerHTML = "Plus de films";
-					break;
-			}
-			iteration++;
-			if (iteration>2) iteration=1
-			$(this).data('iteration',iteration)
-		})
-          // End Button More films
-          // Start Button more Series
-          $('#moreSeries').on('click',function(){
-    			var iteration=$(this).data('iteration')||1
-    			switch ( iteration) {
-    				case 1:
-    					$('.moreserie').show();
-                             document.getElementById("moreSeries").innerHTML = "Moins de films";
-    					break;
-
-    				case 2:
-    					$('.moreserie').hide();
-                             document.getElementById("moreSeries").innerHTML = "Plus de series";
-    					break;
-    			}
-    			iteration++;
-    			if (iteration>2) iteration=1
-    			$(this).data('iteration',iteration)
-    		})
+      $('#moreFilms').on('click', function() {
+        var iteration = $(this).data('iteration') || 1
+        switch (iteration) {
+          case 1:
+            $('.morefilm').show();
+            document.getElementById("moreFilms").innerHTML = "Moins de films";
+            break;
+          case 2:
+            $('.morefilm').hide();
+            document.getElementById("moreFilms").innerHTML = "Plus de films";
+            break;
+        }
+        iteration++;
+        if (iteration > 2) iteration = 1
+        $(this).data('iteration', iteration)
+      })
+      // End Button More films
+      // Start Button more Series
+      $('#moreSeries').on('click', function() {
+        var iteration = $(this).data('iteration') || 1
+        switch (iteration) {
+          case 1:
+            $('.moreserie').show();
+            document.getElementById("moreSeries").innerHTML = "Moins de films";
+            break;
+          case 2:
+            $('.moreserie').hide();
+            document.getElementById("moreSeries").innerHTML = "Plus de series";
+            break;
+        }
+        iteration++;
+        if (iteration > 2) iteration = 1
+        $(this).data('iteration', iteration)
+      })
     })
     $(function() { // FiveImages
       $(".slideshow").each(function() {
@@ -591,310 +681,332 @@
         });
       }, 3000);
     }); // End FiveImages
-
     //start Shopping
-    $('#batmanmovie-2017').on({'click': function(){
-        posData=0;
-        $('#trailerShop').attr('src',url[posData]);
+    $('#batmanmovie-2017').on({
+      'click': function() {
+        posData = 0;
+        $('#trailerShop').attr('src', url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
-        }
-     });
-     $('#hostel-2005').on({'click': function(){
-        posData=1;
-        $('#trailerShop').attr('src',url[posData]);
+      }
+    });
+    $('#hostel-2005').on({
+      'click': function() {
+        posData = 1;
+        $('#trailerShop').attr('src', url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
-        }
-     });
-     $('#inception-2010').on({'click': function(){
-        posData=2;
-        $('#trailerShop').attr('src',url[posData]);
+      }
+    });
+    $('#inception-2010').on({
+      'click': function() {
+        posData = 2;
+        $('#trailerShop').attr('src', url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
-        }
-     });
-     $('#lepatientanglais-1996').on({'click': function(){
-        posData=3;
-        $('#trailerShop').attr('src',url[posData]);
+      }
+    });
+    $('#lepatientanglais-1996').on({
+      'click': function() {
+        posData = 3;
+        $('#trailerShop').attr('src', url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
-        }
-     });
-     $('#lesdeuxtours-2002').on({'click': function(){
-        posData=4;
-        $('#trailerShop').attr('src',url[posData]);
+      }
+    });
+    $('#lesdeuxtours-2002').on({
+      'click': function() {
+        posData = 4;
+        $('#trailerShop').attr('src', url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
-        }
-     });
-     $('#seven-1995').on({'click': function(){
-        posData=5;
-        $('#trailerShop').attr('src',url[posData]);
+      }
+    });
+    $('#seven-1995').on({
+      'click': function() {
+        posData = 5;
+        $('#trailerShop').attr('src', url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
-        }
-     });
-     $('#shutterisland-2010').on({'click': function(){
-         posData=6;
-        $('#trailerShop').attr('src',url[posData]);
+      }
+    });
+    $('#shutterisland-2010').on({
+      'click': function() {
+        posData = 6;
+        $('#trailerShop').attr('src', url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
-        }
-     });
-     $('#starwarsempire-1980').on({'click': function(){
-        posData=7;
-        $('#trailerShop').attr('src',url[posData]);
+      }
+    });
+    $('#starwarsempire-1980').on({
+      'click': function() {
+        posData = 7;
+        $('#trailerShop').attr('src', url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
-        }
-     });
-     $('#Survivestyle5-2004').on({'click': function(){
-        posData=8;
-        $('#trailerShop').attr('src',url[posData]);
+      }
+    });
+    $('#Survivestyle5-2004').on({
+      'click': function() {
+        posData = 8;
+        $('#trailerShop').attr('src', url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
-        }
-     });
-     $('#swissarmyman-2016').on({'click': function(){
-        posData=9;
-        $('#trailerShop').attr('src',url[posData]);
+      }
+    });
+    $('#swissarmyman-2016').on({
+      'click': function() {
+        posData = 9;
+        $('#trailerShop').attr('src', url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
-        }
-     });
-     $('#thefall-2006').on({'click': function(){
-        posData=10;
-        $('#trailerShop').attr('src',url[posData]);
+      }
+    });
+    $('#thefall-2006').on({
+      'click': function() {
+        posData = 10;
+        $('#trailerShop').attr('src', url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
-        }
-     });
-     $('#WhatWeDoInTheShadows-2014').on({'click': function(){
-        posData=11;
-        $('#trailerShop').attr('src',url[posData]);
+      }
+    });
+    $('#WhatWeDoInTheShadows-2014').on({
+      'click': function() {
+        posData = 11;
+        $('#trailerShop').attr('src', url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
-        }
-     });
-     $('#zoolander-2001').on({'click': function(){
-        posData=12;
-        $('#trailerShop').attr('src',url[posData]);
+      }
+    });
+    $('#zoolander-2001').on({
+      'click': function() {
+        posData = 12;
+        $('#trailerShop').attr('src', url[posData]);
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
-        }
-     });
-     // end shopPic
-     // start Modal films
-     $(".batman").on({'click': function () {
-        $('#trailer').attr('src','https://www.youtube.com/embed/2znBVEWdYsY')
+      }
+    });
+    // end shopPic
+    // start Modal films
+    $(".batman").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/2znBVEWdYsY')
         document.getElementById("movieTitle").innerHTML = "Batman";
         document.getElementById("movieYear").innerHTML = "2017";
         document.getElementById("movieStyle").innerHTML = "Comédie";
         $('#imagemodal').modal('show');
-        }
-      });
-
-      $(".hostel").on({'click': function () {
-        $('#trailer').attr('src','https://www.youtube.com/embed/cVBdQiUHhZI')
+      }
+    });
+    $(".hostel").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/cVBdQiUHhZI')
         document.getElementById("movieTitle").innerHTML = "Hostel";
         document.getElementById("movieYear").innerHTML = "2005";
         document.getElementById("movieStyle").innerHTML = "Thriller";
         $('#imagemodal').modal('show');
-        }
-      });
-      $(".inception").on({'click': function () {
-        $('#trailer').attr('src','https://www.youtube.com/embed/B4nIVh1yvvc')
+      }
+    });
+    $(".inception").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/B4nIVh1yvvc')
         document.getElementById("movieTitle").innerHTML = "Inception";
         document.getElementById("movieYear").innerHTML = "2010";
         document.getElementById("movieStyle").innerHTML = "Sciences-Fiction";
         $('#imagemodal').modal('show');
-        }
-      });
-      $(".lepatient").on({'click': function () {
-        $('#trailer').attr('src','https://www.youtube.com/embed/xImomcZczRY')
+      }
+    });
+    $(".lepatient").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/xImomcZczRY')
         document.getElementById("movieTitle").innerHTML = "Le patient Anglais";
         document.getElementById("movieYear").innerHTML = "1996";
         document.getElementById("movieStyle").innerHTML = "Drama";
         $('#imagemodal').modal('show');
-        }
-      });
-      $(".lesdeuxtours").on({'click': function () {
-        $('#trailer').attr('src','https://www.youtube.com/embed/LbfMDwc4azU')
+      }
+    });
+    $(".lesdeuxtours").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/LbfMDwc4azU')
         document.getElementById("movieTitle").innerHTML = "Les Deux tours";
         document.getElementById("movieYear").innerHTML = "2002";
         document.getElementById("movieStyle").innerHTML = "Aventure";
         $('#imagemodal').modal('show');
-        }
-      });
-      $(".seven").on({'click': function () {
-        $('#trailer').attr('src','https://www.youtube.com/embed/znmZoVkCjpI')
+      }
+    });
+    $(".seven").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/znmZoVkCjpI')
         document.getElementById("movieTitle").innerHTML = "Seven";
         document.getElementById("movieYear").innerHTML = "1995";
         document.getElementById("movieStyle").innerHTML = "Thriller";
         $('#imagemodal').modal('show');
-        }
-      });
-      $(".shutterisland").on({'click': function () {
-        $('#trailer').attr('src','https://www.youtube.com/embed/5iaYLCiq5RM')
+      }
+    });
+    $(".shutterisland").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/5iaYLCiq5RM')
         document.getElementById("movieTitle").innerHTML = "Shutter island";
         document.getElementById("movieYear").innerHTML = "2010";
         document.getElementById("movieStyle").innerHTML = "Thriller";
         $('#imagemodal').modal('show');
-        }
-      });
-      $(".starwars").on({'click': function () {
-        $('#trailer').attr('src','https://www.youtube.com/embed/mz_YWNhKOkM')
+      }
+    });
+    $(".starwars").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/mz_YWNhKOkM')
         document.getElementById("movieTitle").innerHTML = "Star Wars Empire";
         document.getElementById("movieYear").innerHTML = "1980";
         document.getElementById("movieStyle").innerHTML = "Sciences-Fiction";
         $('#imagemodal').modal('show');
-        }
-      });
-      $(".survivestyle").on({'click': function () {
-        $('#trailer').attr('src','https://www.youtube.com/embed/LEH7nDkiPEk')
+      }
+    });
+    $(".survivestyle").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/LEH7nDkiPEk')
         document.getElementById("movieTitle").innerHTML = "Survive Style 5+";
         document.getElementById("movieYear").innerHTML = "2004";
         document.getElementById("movieStyle").innerHTML = "Comédie";
         $('#imagemodal').modal('show');
-        }
-      });
-      $(".swissarmyman").on({'click': function () {
-        $('#trailer').attr('src','https://www.youtube.com/embed/yrK1f4TsQfM')
+      }
+    });
+    $(".swissarmyman").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/yrK1f4TsQfM')
         document.getElementById("movieTitle").innerHTML = "Swiss Army Man";
         document.getElementById("movieYear").innerHTML = "2016";
         document.getElementById("movieStyle").innerHTML = "Comédie";
         $('#imagemodal').modal('show');
-        }
-      });
-      $(".thefall").on({'click': function () {
-        $('#trailer').attr('src','https://www.youtube.com/embed/dyFrBC1rAcg')
+      }
+    });
+    $(".thefall").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/dyFrBC1rAcg')
         document.getElementById("movieTitle").innerHTML = "The Fall";
         document.getElementById("movieYear").innerHTML = "2006";
         document.getElementById("movieStyle").innerHTML = "Drama";
         $('#imagemodal').modal('show');
-        }
-      });
-      $(".shadows").on({'click': function () {
-        $('#trailer').attr('src','https://www.youtube.com/embed/IAZEWtyhpes')
+      }
+    });
+    $(".shadows").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/IAZEWtyhpes')
         document.getElementById("movieTitle").innerHTML = "What We Do In Shadows";
         document.getElementById("movieYear").innerHTML = "2014";
         document.getElementById("movieStyle").innerHTML = "Comédie";
         $('#imagemodal').modal('show');
-        }
-      });
-      $(".zoolander").on({'click': function () {
-        $('#trailer').attr('src','https://www.youtube.com/embed/YtQq0T3ExLs')
+      }
+    });
+    $(".zoolander").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/YtQq0T3ExLs')
         document.getElementById("movieTitle").innerHTML = "Zoolander";
         document.getElementById("movieYear").innerHTML = "2001";
         document.getElementById("movieStyle").innerHTML = "Comédie";
         $('#imagemodal').modal('show');
+      }
+    });
+    //end Modal films
+    // Start previous and next button for shopFilms
+    var images = ['', '', '', '', '', '', '', '', '', '', '', '', ''];
+    var url = ['', '', '', '', '', '', '', '', '', '', '', ''];
+    var titles = ['Batman', 'Hostel', 'Inception', 'Le patient anglais', 'Les deux tours', 'Se7en', 'Shutter Island', 'Star Wars Empire', 'Survive Style 5+', 'Swiss army man', 'The fall', 'What We Do In The Shadows', 'Zoolander'];
+    var year = ['2017', '2005', '2010', '1996', '2002', '1995', '2010', '1980', '2004', '2016', '2006', '2014', '2001'];
+    var gender = ['Comédie', 'Thriller', 'Sciences-Fiction', 'Drama', 'Aventure', 'Thriller', 'ThriThriller', 'Sciences-Fiction', 'Comédie', 'Comédie', 'Drama', 'Comédie', 'Comédie'];
+    var posData = 0;
+    images[0] = "../img/batmanmovie-2017-comedie.jpg";
+    images[1] = "../img/hostel-2005-thriller.jpg";
+    images[2] = "../img/inception-2010-scifi.jpg";
+    images[3] = "../img/lepatientanglais-1996-dramatique.jpg";
+    images[4] = "../img/lesdeuxtours-2002-aventure.jpg";
+    images[5] = "../img/seven-1995-thriller.jpg";
+    images[6] = "../img/shutterisland-2010-thriller.jpg";
+    images[7] = "../img/starwarsempire-1980-scifi.jpg";
+    images[8] = "../img/Survivestyle5-2004-comedie.jpg";
+    images[9] = "../img/swissarmyman-2016-comedie.jpg";
+    images[10] = "../img/thefall-2006-dramatique.jpg";
+    images[11] = "../img/WhatWeDoInTheShadows-2014-comedie.jpg";
+    images[12] = "../img/zoolander-2001-comedie.jpg";
+    url[0] = "https://www.youtube.com/embed/2znBVEWdYsY";
+    url[1] = "https://www.youtube.com/embed/cVBdQiUHhZI";
+    url[2] = "https://www.youtube.com/embed/B4nIVh1yvvc";
+    url[3] = "https://www.youtube.com/embed/xImomcZczRY";
+    url[4] = "https://www.youtube.com/embed/LbfMDwc4azU";
+    url[5] = "https://www.youtube.com/embed/znmZoVkCjpI";
+    url[6] = "https://www.youtube.com/embed/5iaYLCiq5RM";
+    url[7] = "https://www.youtube.com/embed/mz_YWNhKOkM";
+    url[8] = "https://www.youtube.com/embed/LEH7nDkiPEk";
+    url[9] = "https://www.youtube.com/embed/yrK1f4TsQfM";
+    url[10] = "https://www.youtube.com/embed/dyFrBC1rAcg";
+    url[11] = "https://www.youtube.com/embed/IAZEWtyhpes";
+    url[12] = "https://www.youtube.com/embed/YtQq0T3ExLs";
+    // function for next & previous buttons + Loading Trailer when clicked images or button pressed
+    $('#next').on({
+      'click': function() {
+        if (posData >= 12) {
+          posData = 0;
+          $('#trailerShop').attr('src', url[posData]);
+          document.getElementById("titleShop").innerHTML = titles[posData];
+          document.getElementById("yearShop").innerHTML = year[posData];
+          document.getElementById("genderShop").innerHTML = gender[posData];
+        } else {
+          posData++;
+          $('#trailerShop').attr('src', url[posData]);
+          document.getElementById("titleShop").innerHTML = titles[posData];
+          document.getElementById("yearShop").innerHTML = year[posData];
+          document.getElementById("genderShop").innerHTML = gender[posData];
         }
-      });
-     //end Modal films
-
-     // Start previous and next button for shopFilms
-     var images = ['','','','','','','','','','','','',''];
-     var url =['','','','','','','','','','','',''];
-     var titles =['Batman','Hostel','Inception','Le patient anglais','Les deux tours','Se7en','Shutter Island','Star Wars Empire','Survive Style 5+','Swiss army man','The fall','What We Do In The Shadows','Zoolander'];
-     var year = ['2017','2005','2010','1996','2002','1995','2010','1980','2004','2016','2006','2014','2001'];
-     var gender =['Comédie','Thriller','Sciences-Fiction','Drama','Aventure','Thriller','ThriThriller','Sciences-Fiction','Comédie','Comédie','Drama','Comédie','Comédie'];
-
-     var posData = 0;
-     images[0]="../img/batmanmovie-2017-comedie.jpg"; images[1]="../img/hostel-2005-thriller.jpg";
-     images[2]="../img/inception-2010-scifi.jpg";
-     images[3]="../img/lepatientanglais-1996-dramatique.jpg";
-     images[4]="../img/lesdeuxtours-2002-aventure.jpg";
-     images[5]="../img/seven-1995-thriller.jpg";
-     images[6]="../img/shutterisland-2010-thriller.jpg";
-     images[7]="../img/starwarsempire-1980-scifi.jpg";
-     images[8]="../img/Survivestyle5-2004-comedie.jpg";
-     images[9]="../img/swissarmyman-2016-comedie.jpg";
-     images[10]="../img/thefall-2006-dramatique.jpg";
-     images[11]="../img/WhatWeDoInTheShadows-2014-comedie.jpg";
-     images[12]="../img/zoolander-2001-comedie.jpg";
-
-     url[0]="https://www.youtube.com/embed/2znBVEWdYsY";
-     url[1]="https://www.youtube.com/embed/cVBdQiUHhZI";
-     url[2]="https://www.youtube.com/embed/B4nIVh1yvvc";
-     url[3]="https://www.youtube.com/embed/xImomcZczRY";
-     url[4]="https://www.youtube.com/embed/LbfMDwc4azU";
-     url[5]="https://www.youtube.com/embed/znmZoVkCjpI";
-     url[6]="https://www.youtube.com/embed/5iaYLCiq5RM";
-     url[7]="https://www.youtube.com/embed/mz_YWNhKOkM";
-     url[8]="https://www.youtube.com/embed/LEH7nDkiPEk";
-     url[9]="https://www.youtube.com/embed/yrK1f4TsQfM";
-     url[10]="https://www.youtube.com/embed/dyFrBC1rAcg";
-     url[11]="https://www.youtube.com/embed/IAZEWtyhpes";
-     url[12]="https://www.youtube.com/embed/YtQq0T3ExLs";
-
-     // function for next & previous buttons + Loading Trailer when clicked images or button pressed
-     $('#next').on({'click': function(){
-          if(posData>=12){
-               posData=0;
-               $('#trailerShop').attr('src',url[posData]);
-               document.getElementById("titleShop").innerHTML = titles[posData];
-               document.getElementById("yearShop").innerHTML = year[posData];
-               document.getElementById("genderShop").innerHTML = gender[posData];
-
-          }
-          else{
-               posData++;
-               $('#trailerShop').attr('src',url[posData]);
-               document.getElementById("titleShop").innerHTML = titles[posData];
-               document.getElementById("yearShop").innerHTML = year[posData];
-               document.getElementById("genderShop").innerHTML = gender[posData];
-          }
-     }})
-     $('#previous').on({'click': function(){
-          if(posData <= 0){
-               posData=12;
-               $('#trailerShop').attr('src',url[posData]);
-               document.getElementById("titleShop").innerHTML = titles[posData];
-               document.getElementById("yearShop").innerHTML = year[posData];
-               document.getElementById("genderShop").innerHTML = gender[posData];
-               posData--;
-          }
-          else{
-               posData--;
-               $('#trailerShop').attr('src',url[posData]);
-               document.getElementById("titleShop").innerHTML = titles[posData];
-               document.getElementById("yearShop").innerHTML = year[posData];
-               document.getElementById("genderShop").innerHTML = gender[posData];
-
-          }
-     }})
-     // Button send message that should open a pop up with the infos
-     $('#sendMessage').on({'click': function(){
-          var name = $('#inputFirst').val();
-          var lastName = $('#inputLast').val();
-          var email = $('#inputEmail').val();
-          var subject = $('#inputSubject').val();
-          var comment = $('#comment').val();
-          alert("Bonjour "+name+" "+lastName+" .\n\n Votre adresse email est: "+email+" \n\n Votre message a pour sujet: "+subject+" .\n\n Voici le contenu du messsage envoyé: \n\n"+comment);
-     }})
-     // Subscribe will show a pop up like the send message button
-     $('.subscribeBtn').on({'click': function(){
-          var emailSub = $('#subscribe').val();
-          alert("Vous êtes maintenant inscrit avec l'adresse email "+emailSub);
-     }})
-
+      }
+    })
+    $('#previous').on({
+      'click': function() {
+        if (posData <= 0) {
+          posData = 12;
+          $('#trailerShop').attr('src', url[posData]);
+          document.getElementById("titleShop").innerHTML = titles[posData];
+          document.getElementById("yearShop").innerHTML = year[posData];
+          document.getElementById("genderShop").innerHTML = gender[posData];
+          posData--;
+        } else {
+          posData--;
+          $('#trailerShop').attr('src', url[posData]);
+          document.getElementById("titleShop").innerHTML = titles[posData];
+          document.getElementById("yearShop").innerHTML = year[posData];
+          document.getElementById("genderShop").innerHTML = gender[posData];
+        }
+      }
+    })
+    // Button send message that should open a pop up with the infos
+    $('#sendMessage').on({
+      'click': function() {
+        var name = $('#inputFirst').val();
+        var lastName = $('#inputLast').val();
+        var email = $('#inputEmail').val();
+        var subject = $('#inputSubject').val();
+        var comment = $('#comment').val();
+        alert("Bonjour " + name + " " + lastName + " .\n\n Votre adresse email est: " + email + " \n\n Votre message a pour sujet: " + subject + " .\n\n Voici le contenu du messsage envoyé: \n\n" + comment);
+      }
+    })
+    // Subscribe will show a pop up like the send message button
+    $('.subscribeBtn').on({
+      'click': function() {
+        var emailSub = $('#subscribe').val();
+        alert("Vous êtes maintenant inscrit avec l'adresse email " + emailSub);
+      }
+    })
   </script>
-  <script type="text/javascript" id="cookiebanner"
-   src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.2.1/cookiebanner.min.js"></script>
 </body>
 
 </html>
