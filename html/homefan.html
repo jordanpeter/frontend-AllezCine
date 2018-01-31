@@ -39,14 +39,15 @@
              <img src="../img/wolverine/wolverine-figurine.jpg" id="goodiesShop"></iframe>
 
              <div class="left col-6 col-md-6">
-               <h4 id="titleShop">Batman </h4>
-               <input type="number" name="figurine" value="0" id="figurine1">
+               <h4 id="titleShop">Wolverine 1 </h4>
+               <input type="number" name="figurine" value="0" id="figurine1" class="quantity">
              </div>
              <div class="right col-6 col-md-6">
-               <p id="descriptionShop">A cooler-than-ever Bruce Wayne must deal with the usual suspects as they plan to rule Gotham City,</p>
+               <p id="descriptionShop">3€</p>
 
              </div>
              <p>
+                  <input type="button" value="Add" id="addButton"></p>
                   <input type="button" value="Total" id="totalButton"></p>
                   Total hors frais de livraison
                   <input type="text" name="figurine" value="" id="totalVal">
@@ -92,13 +93,18 @@
   <script>
     $(document).ready(function() {
          // It gets the value from the input and put them in variables, then with different conditions it will be automaticaly calculate and the value will be display in inputs
+         var panier = [0,0,0,0,0,0,0];
+
+         $('#addButton').on({'click': function(){
+              panier[posData] = $('.quantity').val()*prices[posData];
+              console.log(panier[posData]);
+         }})
           $('#totalButton').on({'click': function(){
                var item1 = $('#figurine1').val();
                var item2 = $('#figurine2').val();
                var item3 = $('#figurine3').val();
                var item4 = $('#figurine4').val();
-               var total = (item1*5)+(item2*3)+(item3*2)+(item4*8);
-               console.log(total);
+               var total = panier[0]+panier[1]+panier[2]+panier[3]+panier[4]+panier[5]+panier[6];
                $('#totalVal').attr('value', total+" €");
                if(total>0 && total < 15){
                     var frais = 10;
@@ -139,15 +145,72 @@
           var posData = 0;
           var images = ['../img/wolverine/wolverine-figurine.jpg','../img/wolverine/wolverine-figurine2.jpg','../img/wolverine/wolverine-figurine3.jpg','../img/wolverine/wolverine-gadget.jpg','../img/wolverine/wolverine-mini.jpg','../img/wolverine/wolverine-toy.jpg','../img/wolverine/wolverine-toy2.jpg'];
           var names = ['Wolverine 1','Wolverine 2','Wolverine 3','Wolverine 4','Wolverine 5','Wolverine 6','Wolverine 7'];
+          var prices =[3,5,8,10,4,6,9];
+
+          $('#wolvFig1').on({
+           'click': function() {
+                 posData = 0;
+               $('#goodiesShop').attr('src',images[posData]);
+               document.getElementById('titleShop').innerHTML = names[posData];
+               document.getElementById('descriptionShop').innerHTML = prices[posData]+" €/pc";
+               document.getElementsByClassName('quantity').id = "figurine1";
+          }
+          });
 
           $('#wolvFig2').on({
             'click': function() {
                  posData = 1;
                $('#goodiesShop').attr('src',images[posData]);
                document.getElementById('titleShop').innerHTML = names[posData];
-               document.getElementById('descriptionShop').innerHTML = "Price: 5€/pc";
-          }
-     });
+               document.getElementById('descriptionShop').innerHTML = prices[posData]+" €/pc";
+               document.getElementsByClassName('quantity').id = "figurine2";
+               }
+          });
+          $('#wolvFig3').on({
+            'click': function() {
+                 posData = 2;
+               $('#goodiesShop').attr('src',images[posData]);
+               document.getElementById('titleShop').innerHTML = names[posData];
+               document.getElementById('descriptionShop').innerHTML = prices[posData]+" €/pc";
+               document.getElementsByClassName('quantity').id = "figurine3";
+               }
+          });
+          $('#wolvGadget').on({
+            'click': function() {
+                 posData = 3;
+               $('#goodiesShop').attr('src',images[posData]);
+               document.getElementById('titleShop').innerHTML = names[posData];
+               document.getElementById('descriptionShop').innerHTML = prices[posData]+" €/pc";
+               document.getElementsByClassName('quantity').id = "wolvGadget";
+               }
+          });
+          $('#wolvMini').on({
+            'click': function() {
+                 posData = 4;
+               $('#goodiesShop').attr('src',images[posData]);
+               document.getElementById('titleShop').innerHTML = names[posData];
+               document.getElementById('descriptionShop').innerHTML = prices[posData]+" €/pc";
+               document.getElementsByClassName('quantity').id = "wolvMini";
+               }
+          });
+          $('#wolvToy').on({
+            'click': function() {
+                 posData = 5;
+               $('#goodiesShop').attr('src',images[posData]);
+               document.getElementById('titleShop').innerHTML = names[posData];
+               document.getElementById('descriptionShop').innerHTML = prices[posData]+" €/pc";
+               document.getElementsByClassName('quantity').id = "wolvToy";
+               }
+          });
+          $('#wolvToy2').on({
+            'click': function() {
+                 posData = 6;
+               $('#goodiesShop').attr('src',images[posData]);
+               document.getElementById('titleShop').innerHTML = names[posData];
+               document.getElementById('descriptionShop').innerHTML = prices[posData]+" €/pc";
+               document.getElementsByClassName('quantity').id = "wolvToy2";
+               }
+          });
 })
   </script>
 </body>
