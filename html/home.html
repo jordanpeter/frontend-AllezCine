@@ -414,9 +414,8 @@
             <h5 id="genderShop">Comédie :</h5>
           </div>
           <div class="right col-6 col-md-6">
-            <p id="titleShop">Batman</p>
-            <p id="yearShop">2017</p>
-            <p id="genderShop">Comédie</p>
+            <p id="descriptionShop">A cooler-than-ever Bruce Wayne must deal with the usual suspects as they plan to rule Gotham City, while discovering that he has accidentally adopted a teenage orphan who wishes to become his sidekick.</p>
+
           </div>
 
 
@@ -636,6 +635,7 @@
         switch (iteration) {
           case 1:
             $('.morefilm').show();
+            $('.all').show();
             document.getElementById("moreFilms").innerHTML = "Moins de films";
             break;
           case 2:
@@ -654,6 +654,7 @@
         switch (iteration) {
           case 1:
             $('.moreserie').show();
+            $('.allSerie').show();
             document.getElementById("moreSeries").innerHTML = "Moins de films";
             break;
           case 2:
@@ -686,11 +687,12 @@
       'click': function() {
         posData = 0;
         $('#trailerShop').attr('src', url[posData]);
-        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("titleShop").innerHTML = titles[posData]; //Je sais je peux l'optimiser
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
-      }
-    });
+        document.getElementById("descriptionShop").innerHTML = description[posData];
+    }
+    })
     $('#hostel-2005').on({
       'click': function() {
         posData = 1;
@@ -698,6 +700,7 @@
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
       }
     });
     $('#inception-2010').on({
@@ -707,6 +710,7 @@
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
       }
     });
     $('#lepatientanglais-1996').on({
@@ -716,6 +720,7 @@
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
       }
     });
     $('#lesdeuxtours-2002').on({
@@ -725,6 +730,7 @@
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
       }
     });
     $('#seven-1995').on({
@@ -734,6 +740,7 @@
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
       }
     });
     $('#shutterisland-2010').on({
@@ -743,6 +750,7 @@
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
       }
     });
     $('#starwarsempire-1980').on({
@@ -752,6 +760,7 @@
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
       }
     });
     $('#Survivestyle5-2004').on({
@@ -761,6 +770,7 @@
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
       }
     });
     $('#swissarmyman-2016').on({
@@ -770,6 +780,7 @@
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
       }
     });
     $('#thefall-2006').on({
@@ -779,6 +790,7 @@
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
       }
     });
     $('#WhatWeDoInTheShadows-2014').on({
@@ -788,6 +800,7 @@
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
       }
     });
     $('#zoolander-2001').on({
@@ -797,6 +810,7 @@
         document.getElementById("titleShop").innerHTML = titles[posData];
         document.getElementById("yearShop").innerHTML = year[posData];
         document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
       }
     });
     // end shopPic
@@ -925,6 +939,7 @@
     var titles = ['Batman', 'Hostel', 'Inception', 'Le patient anglais', 'Les deux tours', 'Se7en', 'Shutter Island', 'Star Wars Empire', 'Survive Style 5+', 'Swiss army man', 'The fall', 'What We Do In The Shadows', 'Zoolander'];
     var year = ['2017', '2005', '2010', '1996', '2002', '1995', '2010', '1980', '2004', '2016', '2006', '2014', '2001'];
     var gender = ['Comédie', 'Thriller', 'Sciences-Fiction', 'Drama', 'Aventure', 'Thriller', 'ThriThriller', 'Sciences-Fiction', 'Comédie', 'Comédie', 'Drama', 'Comédie', 'Comédie'];
+     var description= ['','','','','','','','','','','','','',];
     var posData = 0;
     images[0] = "../img/batmanmovie-2017-comedie.jpg";
     images[1] = "../img/hostel-2005-thriller.jpg";
@@ -952,6 +967,19 @@
     url[10] = "https://www.youtube.com/embed/dyFrBC1rAcg";
     url[11] = "https://www.youtube.com/embed/IAZEWtyhpes";
     url[12] = "https://www.youtube.com/embed/YtQq0T3ExLs";
+    description[0]="A cooler-than-ever Bruce Wayne must deal with the usual suspects as they plan to rule Gotham City, while discovering that he has accidentally adopted a teenage orphan who wishes to become his sidekick.";
+    description[1]="Three backpackers head to a Slovak city that promises to meet their hedonistic expectations, with no idea of the hell that awaits them.";
+    description[2]="A thief, who steals corporate secrets through the use of dream-sharing technology, is given the inverse task of planting an idea into the mind of a CEO.";
+    description[3]="At the close of WWII, a young nurse tends to a badly-burned plane crash victim. His past is shown in flashbacks, revealing an involvement in a fateful love affair.";
+    description[4]="While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.";
+    description[5]="Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.";
+    description[6]="In 1954, a U.S. Marshal investigates the disappearance of a murderer, who escaped from a hospital for the criminally insane.";
+    description[7]="After the rebels are overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda. His friends accept shelter from a questionable ally as Darth Vader hunts them in a plan to capture Luke.";
+    description[8]="Five bizarre stories with no apparent connection to one and other eventually become intertwined, resulting in surreal circumstances.";
+    description[9]="A hopeless man stranded on a deserted island befriends a dead body and together they go on a surreal journey to get home.";
+    description[10]="In a hospital on the outskirts of 1920s Los Angeles, an injured stuntman begins to tell a fellow patient, a little girl with a broken arm, a fantastic story of five mythical heroes. Thanks to his fractured state of mind and her vivid imagination, the line between fiction and reality blurs as the tale advances.";
+    description[11]="Viago, Deacon, and Vladislav are vampires who are finding that modern life has them struggling with the mundane - like paying rent, keeping up with the chore wheel, trying to get into nightclubs, and overcoming flatmate conflicts.";
+    description[12]="At the end of his career, a clueless fashion model is brainwashed to kill the Prime Minister of Malaysia.";
     // function for next & previous buttons + Loading Trailer when clicked images or button pressed
     $('#next').on({
       'click': function() {
