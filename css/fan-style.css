@@ -1,0 +1,570 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative !important;
+}
+
+#socialbutton {
+  position: fixed;
+  top: 300px;
+  z-index: 999;
+}
+
+#socialbutton ul {
+  margin: 0;
+  padding: 0;
+  width: 125px;
+}
+
+#socialbutton li {
+  margin: 0 0 5px 0;
+  padding: 5px;
+  position: relative;
+  left: -90px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: right;
+}
+
+#socialbutton li:hover {
+  left: 0;
+}
+
+#socialbutton li:nth-child(1) {
+  background-color: lightblue;
+}
+
+#socialbutton li:nth-child(1) a i {
+  color: lightblue;
+}
+
+#socialbutton li:nth-child(2) {
+  background-color: blue;
+}
+
+#socialbutton li:nth-child(2) a i {
+  color: blue;
+}
+
+#socialbutton li:nth-child(3) {
+  background-color: pink;
+}
+
+#socialbutton li:nth-child(3) a i {
+  color: pink;
+}
+
+#socialbutton li:nth-child(4) {
+  background-color: red;
+}
+
+#socialbutton li:nth-child(4) a i {
+  color: red;
+}
+
+#socialbutton li a {
+  color: white;
+}
+
+#socialbutton li a:hover {
+  text-decoration: none;
+}
+
+#socialbutton li a i {
+  width: 26px;
+  height: 26px;
+  padding: 5px;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+header {
+  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url(../img/wolverine/KWJcW4m.jpg);
+  height: 550px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  overflow: hidden;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse, .navbar-brand {
+  text-align: center;
+}
+
+.navbar-default {
+  background: transparent !important;
+  border-color: transparent!important;
+  padding: 1em 2em;
+}
+
+/*hamburger*/
+
+.icon-bar {
+  background-color: #0765b2 !important;
+}
+
+.navbar-default a {
+  color: black !important;
+  text-transform: uppercase;
+}
+
+.navbar-default li a:hover {
+  color: white !important;
+  background-color: #0765b2 !important;
+}
+
+.navbar-default li a:focus {
+  color: white !important;
+}
+
+.navbar-default li a:active {
+  color: white !important;
+}
+
+.navbar-default .navbar-nav .active a {
+  color: #0765b2 !important;
+  background-color: transparent !important;
+}
+
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle button, .navbar-default .navbar-toggle button:hover {
+  border-color: transparent !important;
+  background-color: transparent !important;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 2em !important;
+  font-weight: bolder!important;
+}
+
+.navbar-nav {
+  font-size: .8em !important;
+}
+
+.dropdown-menu a {
+  color: black !important;
+  font-size: .8em !important;
+}
+
+.dropdown-toggle a:focus, {
+  background-color: none !important;
+}
+
+.input-group button {
+  background-color: none !important;
+  border-color: transparent !important;
+}
+
+.input-group button:hover {
+  background-color: none !important;
+  border-color: transparent !important;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 999;
+}
+
+.container-row {
+  width: 75% !important;
+  margin: 0 auto;
+  color: black !important;
+}
+
+#presentation h1, #bio h1, #featuredSeries h1, #shopMovies h1, #contactUs h1 {
+  color: black !important;
+  font-family: 'Open Sans', sans-serif !important;
+  text-transform: uppercase;
+  font-weight: bold!important;
+  letter-spacing: 0.05em;
+  border-left: #0765b2 solid thick;
+  padding: 15px;
+}
+
+#presentation h4 {
+  color: #0765b2 !important;
+  font-family: 'Open Sans', sans-serif !important;
+  text-transform: uppercase;
+  font-weight: bold!important;
+}
+
+#presentation p {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+#bio img {
+  width: 220px;
+  height: auto;
+}
+
+#bio p {
+  text-align: justify;
+  padding: 10px;
+}
+
+#shopMovies h1 {
+  margin-left: 80px;
+}
+
+/*darkblue text*/
+
+.red {
+  color: #0765b2 !important;
+}
+
+.red p {
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.container-fluid {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-family: 'Reem Kufi', sans-serif;
+  color: white !important;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 1.5em;
+  font-family: 'Reem Kufi', sans-serif;
+  color: black !important;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header .main-button {
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.main-text {
+  margin: 100px;
+}
+
+.container-yellow {
+  background-color: #0765b2 !important;
+  width: 100vw;
+  height: 160px;
+}
+
+.container-yellow h4 {
+  padding: 5px;
+  color: black !important;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold !important;
+}
+
+.container-yellow .col-12.col-md-4 {
+  text-align: center;
+}
+
+@media screen and (min-width:980px) {
+  .container-yellow {
+    height: 75px;
+  }
+  .container-yellow .col-12.col-md-4 {
+    margin: 10px auto;
+  }
+}
+
+.btn.btn-primary.black {
+  color: black !important;
+  margin: 10px 2px;
+  border-radius: 0px !important;
+  border-color: #F4FF40 !important;
+  background-color: #F4FF40 !important;
+  text-transform: uppercase;
+}
+
+.btn.btn-primary {
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #0765b2 !important;
+  border-radius: 0 !important;
+  border-color: #0765b2 !important;
+}
+
+.filter-button button {
+  margin: 2px 0px;
+  background-color: yellow !important;
+  border-radius: 0 !important;
+  border-color: transparent!important;
+  padding: 10px;
+}
+
+.filter-button button:hover, .filter-button button:focus {
+  background: #0765b2 !important;
+  padding: 10px;
+  border-color: transparent !important;
+  text-shadow: none !important;
+}
+
+.btn-hide {
+  text-align: center;
+}
+
+.btn-hide button {
+  text-transform: uppercase;
+  color: white !important;
+  font-weight: bold;
+  background-color: #0765b2 !important;
+  border-radius: 0 !important;
+  border-color: transparent!important;
+  padding: 10px;
+}
+
+.slideshow {
+  margin: 50px auto;
+  position: relative;
+  width: 130px;
+  height: 180px;
+  padding: 20px;
+}
+
+.slideshow>div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.item img {
+  width: 100%;
+  height: 25%;
+  padding: 0;
+  margin: 0;
+  filter: brightness(45%);
+}
+
+img {
+  width: 130px;
+  height: 180px;
+  margin: 10px 5px;
+}
+
+hr {
+  border: .5px solid #777474 !important;
+  width: 100%;
+  margin: 10px 0 25px 0 !important;
+  !important;
+  padding: 0;
+}
+
+footer {
+  background-color: #2d2d2d;
+  padding: 20px;
+  text-align: center;
+}
+
+footer h5 {
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  color: white !important;
+  font-weight: bold;
+}
+
+.images h5 {
+  margin-top: -8px;
+  font-size: 1.5em;
+}
+
+footer .review p {
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  color: white !important;
+  font-weight: bold;
+}
+
+footer .subscribe input {
+  border-radius: 0 !important;
+  margin: 5px auto;
+}
+
+footer .subscribe button {
+  margin: 5px auto;
+}
+
+footer .connect-social li {
+  padding: 5px;
+  margin: 5px;
+  display: inline;
+  border: white thin solid;
+}
+
+footer li a i {
+  color: white;
+  width: 15px;
+  height: 15px;
+}
+
+hr {
+  width: 100%;
+}
+
+.connect-social ul {
+  margin-left: -40px !important;
+}
+
+.connect-social p {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: grey;
+}
+
+.subscribe2 {
+  margin: 20px auto;
+}
+
+.subscribe2 ul {
+  margin: 0;
+  padding: 0;
+}
+
+.subscribe2 li {
+  text-align: left !important;
+  list-style: none;
+  color: grey !important;
+}
+
+.review p {
+  line-height: 30px;
+}
+
+.review span {
+  text-transform: none;
+  font-weight: normal;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px;
+  margin-top: 10px !important;
+}
+
+.images img {
+  margin: 0;
+  padding: 0;
+  width: 65px;
+  height: 80px;
+}
+
+.latest iframe {
+  text-align: left;
+  width: 70px;
+  height: 40px;
+}
+
+.latest p {
+  text-align: left;
+  margin: 2px auto;
+  text-transform: none;
+  color: grey;
+  font-weight: normal;
+}
+
+#shopMovies .right {
+  padding: 0;
+  margin-top: 10px;
+  background-color: black !important;
+  height: 100%;
+  color: white !important;
+}
+
+#shopMovies .right button {
+  margin-top: -25px;
+  border-radius: 0 !important;
+  border-color: transparent!important;
+  background-color: black !important;
+  color: white !important;
+}
+
+#shopMovies .right h4 {
+  text-transform: uppercase;
+  color: #0765b2 !important;
+  font-weight: bold;
+}
+
+#shopMovies .right h5 {
+  color: #0765b2 !important;
+  font-weight: bold;
+}
+
+#shopMovies .right iframe {
+  width: 100%;
+  height: auto;
+}
+
+/*pop-ups windows ____________________________________________*/
+
+.modal-header {
+  text-align: center;
+  text-transform: uppercase !important;
+  font-style: 'Open Sans', sans-serif !important;
+}
+
+.modal-header h4 {
+  color: #0765b2 !important;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.modal-header p {
+  color: black !important;
+  text-align: left;
+}
+
+.modal-header input {
+  padding: 5px;
+  margin: 10px;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-body input {
+  padding: 5px;
+  margin: 10px;
+}
+
+.modal-body p {
+  color: black !important;
+  margin: 0 !important;
+}
+
+.modal-footer button {
+  font-weight: bold;
+  color: white !important;
+  text-transform: uppercase;
+  background-color: #0765b2 !important;
+  border-radius: 0 !important;
+  border-color: transparent!important;
+  padding: 10px;
+}
+
+@media screen and (min-width:760px) {
+  .navbar-brand {
+    margin-left: 530px;
+  }
+}
