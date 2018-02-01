@@ -179,7 +179,7 @@ header {
   color: black !important;
 }
 
-#presentation h1, #bio h1, #featuredSeries h1, #shopMovies h1, #contactUs h1 {
+#presentation h1, #bio h1, #photographies h1, #goodies h1, #contactUs h1 {
   color: black !important;
   font-family: 'Open Sans', sans-serif !important;
   text-transform: uppercase;
@@ -197,17 +197,36 @@ header {
 }
 
 #presentation p {
+  text-align: justify;
   font-family: 'Open Sans', sans-serif !important;
 }
 
+.zoom {
+  width: 100%;
+  height: 100%;
+}
+
 #bio img {
-  width: 220px;
+  width: 300px;
   height: auto;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+#bio h4 {
+  text-transform: uppercase;
+  color: #0765b2 !important;
 }
 
 #bio p {
   text-align: justify;
-  padding: 10px;
+  padding: 15px;
+}
+
+@media screen and (max-width: 1060px) {
+  .col-md-8 {
+    width: 100% !important;
+  }
 }
 
 #shopMovies h1 {
