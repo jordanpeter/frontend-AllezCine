@@ -80,12 +80,12 @@ body {
 }
 
 header {
-  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url(../img/wolverine-figurine.jpg);
-  height: 500px;
+  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url(../img/wolverine/KWJcW4m.jpg);
+  height: 550px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   overflow: hidden;
 }
 
@@ -122,7 +122,7 @@ header {
 }
 
 .navbar-default li a:focus {
-  color: yellow !important;
+  color: white !important;
 }
 
 .navbar-default li a:active {
@@ -154,6 +154,10 @@ header {
   font-size: .8em !important;
 }
 
+.dropdown-toggle a:focus, {
+  background-color: none !important;
+}
+
 .input-group button {
   background-color: none !important;
   border-color: transparent !important;
@@ -175,7 +179,7 @@ header {
   color: black !important;
 }
 
-#presentation h1, #bio h1, #featuredSeries h1, #shopMovies h1, #contactUs h1 {
+#presentation h1, #bio h1, #photographies h1, #goodies h1, #contactUs h1 {
   color: black !important;
   font-family: 'Open Sans', sans-serif !important;
   text-transform: uppercase;
@@ -193,12 +197,36 @@ header {
 }
 
 #presentation p {
+  text-align: justify;
   font-family: 'Open Sans', sans-serif !important;
 }
 
+.zoom {
+  width: 100%;
+  height: 100%;
+}
+
 #bio img {
-  width: 220px;
+  width: 300px;
   height: auto;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+#bio h4 {
+  text-transform: uppercase;
+  color: #0765b2 !important;
+}
+
+#bio p {
+  text-align: justify;
+  padding: 15px;
+}
+
+@media screen and (max-width: 1060px) {
+  .col-md-8 {
+    width: 100% !important;
+  }
 }
 
 #shopMovies h1 {
@@ -253,17 +281,16 @@ header .main-button {
 }
 
 .container-yellow {
-  background-color: yellow !important;
+  background-color: #0765b2 !important;
   width: 100vw;
-  height: 150px;
+  height: 160px;
 }
 
 .container-yellow h4 {
-  font-size: 2em !important;
+  padding: 5px;
   color: black !important;
   text-align: center;
   text-transform: uppercase;
-  font-size: 10px !important;
   font-weight: bold !important;
 }
 
@@ -272,15 +299,20 @@ header .main-button {
 }
 
 @media screen and (min-width:980px) {
+  .container-yellow {
+    height: 75px;
+  }
   .container-yellow .col-12.col-md-4 {
-    margin: 30px auto;
+    margin: 10px auto;
   }
 }
 
 .btn.btn-primary.black {
+  color: black !important;
   margin: 10px 2px;
   border-radius: 0px !important;
-  border-color: #0765b2 !important;
+  border-color: #F4FF40 !important;
+  background-color: #F4FF40 !important;
   text-transform: uppercase;
 }
 
@@ -315,7 +347,7 @@ header .main-button {
   text-transform: uppercase;
   color: white !important;
   font-weight: bold;
-  background-color: red !important;
+  background-color: #0765b2 !important;
   border-radius: 0 !important;
   border-color: transparent!important;
   padding: 10px;
@@ -488,12 +520,12 @@ hr {
 
 #shopMovies .right h4 {
   text-transform: uppercase;
-  color: red !important;
+  color: #0765b2 !important;
   font-weight: bold;
 }
 
 #shopMovies .right h5 {
-  color: red !important;
+  color: #0765b2 !important;
   font-weight: bold;
 }
 
@@ -511,7 +543,7 @@ hr {
 }
 
 .modal-header h4 {
-  color: red !important;
+  color: #0765b2 !important;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -544,7 +576,7 @@ hr {
   font-weight: bold;
   color: white !important;
   text-transform: uppercase;
-  background-color: red !important;
+  background-color: #0765b2 !important;
   border-radius: 0 !important;
   border-color: transparent!important;
   padding: 10px;
@@ -554,8 +586,4 @@ hr {
   .navbar-brand {
     margin-left: 530px;
   }
-}
-
-#buttonScroll{
-     position: fixed;
 }
