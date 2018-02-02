@@ -157,13 +157,16 @@
 
         <div class="row" id="presentation">
           <h1>Quick Presentation</h1>
-          <div class="col-12 col-md-6">
+          <div class="filter-button">
+
+
+          <div class="col-12 col-md-4">
             <h4>Real Name</h4>
             <p>James Howlett</p>
             <p>Born with super-human senses and the power to heal from almost any wound, Wolverine was captured by a secret Canadian organization and given an unbreakable skeleton and claws. Treated like an animal, it took years for him to control himself.
               Now, he's a premiere member of both the X-Men and the Avengers. </p>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-4">
             <h4>Powers</h4>
             <p>Wolverine is a mutant who possesses the ability to regenerate damaged or destroyed areas of his cellular structure at a rate far greater than that of an ordinary human. For example, he can fully recover from an ordinary gunshot wound in a
               non-vital area of his body within minutes, but it took him almost two months to fully recover from injuries sustained in a duel with Lord Shingen, which included one from a sword that went all the way through his trunk. Wolverine also possesses
@@ -173,6 +176,28 @@
               healing factor.
 
           </div>
+          <div class="col-12 col-md-4">
+           <button id="firstmoviebtn">X-Men Origins: Wolverine</button>
+           <button id="secondmoviebtn">Wolverine</button>
+           <button id="lastmoviebtn">Logan</button>
+
+           <div id="firstmovie">
+               <h4>X-Men Origins: Wolverine</h4>
+               <p>
+               C'est un prologue de la série de films issus des comics X-Men, mettant en scène les origines du héros Marvel et son histoire avant les événements de la trilogie X-Men. Hugh Jackman reprend son rôle fétiche de héros au pouvoir de régénération convoité par l'armée et impitoyable jusqu'au bout des griffes.</p>
+               <p><a href="https://fr.wikipedia.org/wiki/X-Men_Origins:_Wolverine" target=_blank>Source</a></p>
+          </div>
+          <div id="secondmovie">
+               <h4>Wolverine: Le combat de l'immortel</h4>
+               <p>Wolverine, le personnage le plus emblématique de l’univers des X-Men, est entraîné dans une aventure ultime au cœur du Japon contemporain. Plongé dans un monde qu’il ne connaît pas, il doit faire face au seul ennemi de son envergure, dans une bataille à la vie à la mort. Vulnérable pour la première fois et poussé au bout de ses limites physiques et émotionnelles, Wolverine affrontera non seulement l’acier mortel du samouraï mais aussi les questions liées à sa propre immortalité.</p>
+               <p><a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=146326.html">Source</a></p>
+          </div>
+           <div id="lastmovie">
+               <h4>Logan</h4>
+               <p>Dans un futur proche, un certain Logan, épuisé de fatigue, s’occupe d’un Professeur X souffrant, dans un lieu gardé secret à la frontière Mexicaine. Mais les tentatives de Logan pour se retrancher du monde et rompre avec son passé vont s’épuiser lorsqu’une jeune mutante traquée par de sombres individus va se retrouver soudainement face à lui.</p>
+               <p><a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=225116.html">Source</a></p>
+          </div>
+      </div>
         </div>
       </div>
     </div>
@@ -237,7 +262,7 @@
                 way that allowed Logan's escape. Wolverine tracked down the Winter Soldier in Serbia for information, but was rendered unconscious after a struggle after which the Winter Soldier revealed that he had earlier murdered Logan's pregnant wife.</p>
 
             </p>
-
+          </div>
           </div>
         </div>
       </div>
@@ -332,20 +357,20 @@
         <form>
           <div class="form-row">
             <div class="form-group col-12 col-md-6">
-              <input type="text" class="form-control required" id="inputFirst" placeholder="First Name">
+              <input type="text" class="form-control" id="inputFirst" placeholder="First Name">
             </div>
             <div class="form-group col-12 col-md-6">
-              <input type="text" class="form-control required" id="inputLast" placeholder="Last Name">
+              <input type="text" class="form-control" id="inputLast" placeholder="Last Name">
             </div>
           </div>
           <div class="form-group col-12 col-md-6">
-            <input type="email" class="form-control required" id="inputEmail" placeholder="Email">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
           </div>
           <div class="form-group  col-12 col-md-6">
-            <input type="text" class="form-control required" id="inputSubject" placeholder="Subject">
+            <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
           </div>
           <div class="form-group col-12 col-md-12 ">
-            <textarea class="form-control required" rows="5" id="comment"></textarea>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
           </div>
           <div class="form-group col-12 col-md-12">
             <button type="button" class="btn btn-primary" id="sendMessage">Send message</button>
@@ -701,6 +726,28 @@
                     alert("Vous êtes maintenant inscrit avec l'adresse email " + emailSub);
                    }
                  })
+
+                 // 2 movies
+                 $('#lastmovie').hide();
+                 $('#secondmovie').hide();
+                   $('#firstmoviebtn').on('click', function() {
+                        $('#secondmovie').hide('fast');
+                        $('#lastmovie').hide('fast');
+                        $('#firstmovie').show('slow');
+
+                   })
+                   $('#secondmoviebtn').on('click', function() {
+                        $('#firstmovie').hide('fast');
+                        $('#lastmovie').hide('fast');
+                        $('#secondmovie').show('slow');
+
+                   })
+                    $('#lastmoviebtn').on('click', function() {
+                         $('#firstmovie').hide('fast');
+                         $('#secondmovie').hide('fast');
+                         $('#lastmovie').show('slow');
+
+                    })
 //////////////////////////////////////////////////////////////
 
 
