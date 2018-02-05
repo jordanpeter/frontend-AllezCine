@@ -5,7 +5,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <title>Allez CINE!</title>
-     <script src="../js/jquery-2.2.4.js"></script>
+     <script src="js/jquery-2.2.4.js"></script>
      <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -17,23 +17,23 @@
      <script>
           $('#imgLeft').mouseover(function(){
                $('#leftImg').fadeIn(function(){
-                    $(this).attr('src','../img/18plus.png');
+                    $(this).attr('src','img/18plus.png');
                })
           })
           $('#imgLeft').mouseout(function(){
                $('#leftImg').fadeIn(function(){
-                    $(this).attr('src','../img/popcorn.jpg');
+                    $(this).attr('src','img/popcorn.jpg');
                })
           })
 
           $('#imgRight').mouseover(function(){
                $('#rightImg').fadeIn(function(){
-                    $(this).attr('src','../img/18minus.png');
+                    $(this).attr('src','img/18minus.png');
                })
           })
           $('#imgRight').mouseout(function(){
                $('#rightImg').fadeIn(function(){
-                    $(this).attr('src','../img/camera.jpg');
+                    $(this).attr('src','img/camera.jpg');
                })
           })
 
@@ -41,7 +41,7 @@
           function age(){
                var age = prompt("Entrez votre âge");
                if (age >= 18){
-                    window.location = "../html/home.html";
+                    window.location = "html/home.html";
                }
                else{
                     window.location = "http://www.imdb.com/";
