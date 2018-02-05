@@ -80,6 +80,7 @@ body {
 }
 
 .navbar-default {
+  position: absolute;
   background: transparent !important;
   border-color: transparent!important;
   padding: 1em 2em;
@@ -99,8 +100,6 @@ body {
 .navbar-default li a:hover {
   color: white !important;
   background-color: red !important;
-  width: 100px;
-  height: 60px;
 }
 
 .navbar-default li a:focus {
@@ -131,15 +130,11 @@ body {
 }
 
 .menu {
-  background-color: grey;
-  width: 100px;
-  height: 60px;
+  background-color: rgba(255, 255, 255, 0.25);
   margin: 5px;
 }
 
 .home {
-  width: 100px;
-  height: 60px;
   margin: 5px;
 }
 
@@ -188,9 +183,19 @@ body {
 
 /*text positioning in fading images*/
 
-.fiveImages {
+.container-row-first {
   margin: 50px;
   border: 1px lightgrey solid !important;
+  width: 90vw;
+  height: 50vh;
+}
+
+@media only screen and (max-width:800px) {
+  .container-row-first {
+    margin: 20px;
+    width: 65vw;
+    height: 200vh;
+  }
 }
 
 .fiveImages p {
@@ -231,12 +236,12 @@ body {
 }
 
 .navbar {
-  position: fixed;
+  position: absolute !important;
   z-index: 999;
 }
 
 #myCarousel {
-  margin-top: -170px;
+  margin-top: 0;
   z-index: 1;
 }
 
@@ -290,7 +295,8 @@ body {
   padding: 0 !important;
 }
 
-.container-red h1, #myCarousel h1 {
+#myCarousel h1 {
+  font-size: 5vw;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -319,7 +325,7 @@ body {
 }
 
 .filter-button button {
-  margin: 0;
+  margin: 2px 0px;
   background-color: lightgrey !important;
   border-radius: 0 !important;
   border-color: transparent!important;
@@ -377,6 +383,31 @@ img {
   margin: 10px 5px;
 }
 
+.all.col-md-2.col-6 {
+  width: 150px;
+  padding: 0;
+  margin: 2px;
+}
+
+.allSerie.col-md-2.col-6 {
+  width: 150px;
+  padding: 0;
+  margin: 2px;
+}
+
+.bcgrd.col-md-3.col-6 {
+  width: 150px;
+  padding: 0;
+  margin: 2px;
+  background-color: lightgrey !important;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75) !important;
+}
+
+.bcgrd.col-md-3.col-6 img {
+  width: 100%;
+  margin: 0;
+}
+
 hr {
   border: .5px solid #777474 !important;
   width: 100%;
@@ -397,6 +428,10 @@ footer h5 {
   margin: 0;
   color: white !important;
   font-weight: bold;
+}
+
+.release, .movies, .review, .latest, .images {
+  margin: 10px auto;
 }
 
 .images h5 {
@@ -446,6 +481,15 @@ hr {
   text-transform: uppercase;
   font-weight: bold;
   color: grey;
+}
+
+.subscribe input {
+  text-align: right;
+  width: 350px;
+}
+
+.subscribe button {
+  text-align: right;
 }
 
 .subscribe2 {
@@ -498,7 +542,7 @@ hr {
 
 #shopMovies .right {
   padding: 0;
-  margin-top: 10px;
+  margin-top: 2px;
   background-color: black !important;
   height: 100%;
   color: white !important;

@@ -5,9 +5,17 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="../css/fan-style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
   <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -43,7 +51,7 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li class="home"><a href="#home" class="active">Présentation</a></li>
+          <li class="home"><a href="#presentation" class="active">Présentation</a></li>
           <li class="dropdown menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Biographie<b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -64,11 +72,11 @@
       <h1>The Wolverine</h1>
       <p>If you cage the beast, beast will get angry</p>
       <div class="main-button">
-        <a class="btn btn-primary btn-md " href="# " role="button ">Watch Trailer</a>
+        <a class="btn btn-primary btn-md " href="https://www.youtube.com/watch?v=LjntPrla-NM " role="button ">Watch Trailer</a>
       </div>
     </div>
   </header>
-  <section id="home " class="container-fluid ">
+  <section id="home" class="container-fluid ">
     <div class="container-yellow">
       <div class="row">
         <div class="col-12 col-md-4">
@@ -168,7 +176,7 @@
               or object is hidden. Wolverine can use these enhanced senses to track any creature with an impressive degree of success.Wolverine’s skeleton includes six retractable one-foot long bone claws, three in each arm, that are housed beneath the
               skin and muscle of his forearms. Wolverine can, at will, release these slightly curved claws through his skin beneath the knuckles on each hand. The skin between the knuckles tears and bleeds, but the blood loss is quickly halted by his
               healing factor.
-
+            </p>
           </div>
         </div>
       </div>
@@ -242,7 +250,7 @@
       <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <img src="../img/wolverine/Jstephens--Wolverine_James_detail.jpg" alt="" id="modalImg" style="height:50%; width:50%">
+            <img src="../img/wolverine/Jstephens--Wolverine_James_detail.jpg" alt="" id="modalImg">
             <div class="modal-body">
             </div>
           </div>
@@ -254,7 +262,7 @@
   <section>
     <div class="container-row">
       <div class="row" id="photographies">
-        <h1>Photographies</h1>
+        <h1>Photographies and Art</h1>
         <!-- filter goes here -->
         <img src="../img/wolverine/90__s_wolverine_by_jprart.jpg" alt="" class="90__s_wolverine_by_jprart" data-toggle="modal" data-target="#imagemodal">
         <img src="../img/wolverine/classic_wolverine_by_jprart.jpg" alt="" class="classic_wolverine_by_jprart" data-toggle="modal" data-target="#imagemodal">
@@ -275,7 +283,7 @@
   <section>
     <div class="container">
       <div class="row" id="goodies">
-        <h1>Goodies</h1>
+        <h1>Goodies for sale</h1>
         <div class="left col-12 col-md-6 shopSelect">
           <img src="../img/wolverine/wolverine-toy2.jpg" alt="" id="wolvFig1">
           <img src="../img/wolverine/wolverine-figurine2.jpg" alt="" id="wolvFig2">
@@ -286,30 +294,48 @@
 
         </div>
         <div class="right col-12 col-md-6">
-          <img src="../img/wolverine/wolverine-figurine.jpg" id="goodiesShop"></iframe>
-
-          <div class="left col-6 col-md-6">
-            <h4 id="titleShop">Wolverine 1 </h4>
-            <input type="number" name="figurine" value="0" id="figurine1" class="quantity">
-          </div>
-          <div class="right col-6 col-md-6">
+          <div class="row">
+            <h4 id="titleShop">Wolverine 1</h4>
             <p id="descriptionShop">3 €/pc</p>
 
+            <div class="col-12 col-md-6">
+              <p>
+                Qty:
+                <input type="number" name="figurine" value="0" id="figurine1" class="quantity">
+              </p>
+              <div class="imageC">
+                <img src="../img/wolverine/wolverine-toy2.jpg" id="goodiesShop">
+
+              </div>
+              <p> <button type="button" value="Add" id="addButton"> <i class="fas fa-cart-plus fa-2x"></i> Add to your cart </button>
+              </p>
+
+            </div>
+            <div class="col-12 col-md-6">
+              <p>
+                Total hors frais de livraison</p>
+              <div class="inPut">
+                <input type="text" name="figurine" value="" id="totalVal">
+
+              </div>
+              <p>
+                Frais de livraison:</p>
+              <div class="inPut">
+                <input type="text" name="frais" value="" id="delivery">
+
+              </div>
+              <p>
+                Total TTC:</p>
+              <div class="inPut">
+                <input type="text" name="frais" value="" id="totalTTC">
+
+              </div>
+              <p><button type="button" id="totalButton"> <i class="fas fa-cart-arrow-down fa-2x"></i> Total </button>
+              </p>
+
+            </div>
           </div>
-          <p>
-            <input type="button" value="Add" id="addButton"></p>
-          <input type="button" value="Total" id="totalButton"></p>
-          Total hors frais de livraison
-          <input type="text" name="figurine" value="" id="totalVal">
-          </p>
-          <p>
-            Frais de livraison:
-            <input type="text" name="frais" value="" id="delivery">
-          </p>
-          <p>
-            total TTC:
-            <input type="text" name="frais" value="" id="totalTTC">
-          </p>
+
 
         </div>
       </div>
@@ -319,7 +345,7 @@
   <section>
     <div class="container-row">
       <div class="row" id="contactUs">
-        <h1>Contact us</h1>
+        <h1>Contact with us</h1>
         <form>
           <div class="form-row">
             <div class="form-group col-12 col-md-6">
@@ -339,7 +365,7 @@
             <textarea class="form-control" rows="5" id="comment"></textarea>
           </div>
           <div class="form-group col-12 col-md-12">
-            <button class="btn btn-primary" id="sendMessage">Send message</button>
+            <button type="button" class="btn btn-primary" id="sendMessage">Send message</button>
           </div>
         </form>
 
@@ -351,97 +377,21 @@
     <div class="container ">
       <div class="row">
         <div class="red">
-          <p>Subscribe to us</p>
+          <p>Want to receive updates about our fan-page?</p>
         </div>
-        <div class="subscribe col-12 col-md-12  ">
-          <div class="col-12 col-md-8">
-            <input type="text " class="form-control " id="subscribe " placeholder="Enter email ">
-          </div>
-          <div class="col-12 col-md-4">
+        <div class="subscribe">
+          <p> <input type="text " class="form-control " id="subscribe " placeholder="Enter email ">
             <button href="# " type="subscribe " class="btn btn-primary subscribeBtn">Subscribe</button>
-          </div>
-        </div>
-        <div class="subscribe2 col-12 col-md-12 ">
-          <div class="release col-6 col-md-2 ">
-            <h5>release</h5>
-            <div>
-              <hr>
-            </div>
-            <ul>
-              <li>2016</li>
-              <li>2015</li>
-              <li>2014</li>
-              <li>2013</li>
-              <li>2012</li>
-              <li>2011</li>
-            </ul>
-          </div>
-          <div class="movies col-6 col-md-2 ">
-            <h5>movies</h5>
-            <div>
-              <hr>
-            </div>
-            <ul>
-              <li>Thriller</li>
-              <li>Comedie</li>
-              <li>Drama</li>
-              <li>Sci-fi</li>
-              <li>Adventure</li>
-            </ul>
-          </div>
-          <div class="review col-6 col-md-2 ">
-            <h5>Trailers</h5>
-            <div>
-              <hr>
-            </div>
-            <p> <span>Thriller</span>
-              <span>Comedie</span>
-              <span>Drama</span>
-              <span>Sci-fi</span>
-              <span>Adventure</span>
-              <span>Horror</span>
-              <span>Cartoon</span>
-              <span>Historical</span>
-              <span>Love</span> </p>
-          </div>
-          <div class="latest col-6 col-md-3 ">
-            <h5>latest movies</h5>
-            <div>
-              <hr>
-            </div>
-            <p><iframe src="https://www.youtube.com/embed/2znBVEWdYsY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="trailer"></iframe> <span> Batman</span>
-            </p>
-
-            <p><iframe src="https://www.youtube.com/embed/2znBVEWdYsY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="trailer"></iframe> <span> Seven</span>
-            </p>
-            <p><iframe src="https://www.youtube.com/embed/2znBVEWdYsY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="trailer"></iframe> <span> Inception</span>
-            </p>
-            <p><iframe src="https://www.youtube.com/embed/2znBVEWdYsY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="trailer"></iframe> <span> Hostel</span>
-            </p>
-          </div>
-          <div class="images col-12 col-md-3 ">
-            <h5>Allez <span class="red">Cine!</span></h5>
-            <div>
-              <hr>
-            </div>
-            <img src="../img/batmanmovie-2017-comedie.jpg" alt="">
-            <img src="../img/hostel-2005-thriller.jpg" alt="">
-            <img src="../img/inception-2010-scifi.jpg" alt="">
-            <img src="../img/lepatientanglais-1996-dramatique.jpg" alt="">
-            <img src="../img/lesdeuxtours-2002-aventure.jpg" alt="">
-            <img src="../img/seven-1995-thriller.jpg" alt="">
-          </div>
+          </p>
 
         </div>
         <div>
           <hr>
         </div>
-        <div>
-          <hr>
-        </div>
+
         <div class="connect-social col-12 col-md-12 ">
 
-          <p>Connect us</p>
+          <p>Connect with us</p>
           <div class="col-12 col-md-12 ">
             <ul>
               <li> <a href="# "><i class="fa fa-facebook " aria-hidden="true "></i> </a> </li>
