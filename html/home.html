@@ -14,7 +14,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
   <script src="../js/jquery-2.2.4.js"></script>
-  <script src="../js/cookiechoices.js"></script>
+  <script src="../js/buttontothetop.js"></script>
+  <script src="../js/validationscript.js"></script>
+  <script type="text/javascript" id="cookiebanner" src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.2.1/cookiebanner.min.js"></script>
   <title>AllezCine!</title>
 </head>
 
@@ -123,8 +125,6 @@
         </div>
       </div>
     </div>
-
-
     <div class="container-red">
       <p><i class="fa fa-phone" aria-hidden="true"></i> (+000) 009 455 4088 <button type="button" class="btn btn-primary black" data-toggle="modal" data-target="#exampleModalCenter">
                  Login
@@ -177,9 +177,7 @@
               <h4 class="modal-title">Register</h4>
             </div>
             <div class="modal-body">
-
               <input type="text" placeholder="Name">
-
               <input type="password" placeholder="Password">
               <input type="password" placeholder="Confirm Password">
               <p>Conditions générales d'utilisation</p>
@@ -198,9 +196,9 @@
     </div>
     <!-- fading 5 images are starting here -->
     <div class="fiveImages">
-      <div class="container-row-first">
-        <div class="col-md-1"></div>
-        <div class=" col-6 col-md-2 col-sm-2 col-lg-2 col-xl-2">
+      <div class="container-row">
+
+        <div class=" col-6 col-md-2">
           <div class="slideshow">
             <div>
               <img src="../img/batmanmovie-2017-comedie.jpg" alt="">
@@ -276,7 +274,7 @@
             </div>
             <div>
               <img src="../img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="">
-              <p style="text-align:center; font-size:12px">What We Do in Shadows</p>
+              <p style="text-align:center; font-size:12px">What We </p>
               <p class="yearGenre">2014 <span class="rightText">Comedie</span> </p>
             </div>
           </div>
@@ -675,8 +673,10 @@
               <li>2011</li>
             </ul>
           </div>
+
           <div class="movies col-6 col-md-2 col-sm-2 col-lg-2 col-xl-2 ">
             <h5>movies</h5>
+
             <div>
               <hr>
             </div>
@@ -1206,6 +1206,355 @@
         }
       }
     })
+    // Subscribe will show a pop up like the send message button
+    $('.subscribeBtn').on({
+      'click': function() {
+        var emailSub = $('#subscribe').val();
+        alert("Vous êtes maintenant inscrit avec l'adresse email " + emailSub);
+      }
+    })
+
+    //start Shopping
+    $('#batmanmovie-2017').on({
+      'click': function() {
+        posData = 0;
+        $('#trailerShop').attr('src', url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData]; //Je sais je peux l'optimiser
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
+      }
+    })
+    $('#hostel-2005').on({
+      'click': function() {
+        posData = 1;
+        $('#trailerShop').attr('src', url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
+      }
+    });
+    $('#inception-2010').on({
+      'click': function() {
+        posData = 2;
+        $('#trailerShop').attr('src', url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
+      }
+    });
+    $('#lepatientanglais-1996').on({
+      'click': function() {
+        posData = 3;
+        $('#trailerShop').attr('src', url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
+      }
+    });
+    $('#lesdeuxtours-2002').on({
+      'click': function() {
+        posData = 4;
+        $('#trailerShop').attr('src', url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
+      }
+    });
+    $('#seven-1995').on({
+      'click': function() {
+        posData = 5;
+        $('#trailerShop').attr('src', url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
+      }
+    });
+    $('#shutterisland-2010').on({
+      'click': function() {
+        posData = 6;
+        $('#trailerShop').attr('src', url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
+      }
+    });
+    $('#starwarsempire-1980').on({
+      'click': function() {
+        posData = 7;
+        $('#trailerShop').attr('src', url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
+      }
+    });
+    $('#Survivestyle5-2004').on({
+      'click': function() {
+        posData = 8;
+        $('#trailerShop').attr('src', url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
+      }
+    });
+    $('#swissarmyman-2016').on({
+      'click': function() {
+        posData = 9;
+        $('#trailerShop').attr('src', url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
+      }
+    });
+    $('#thefall-2006').on({
+      'click': function() {
+        posData = 10;
+        $('#trailerShop').attr('src', url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
+      }
+    });
+    $('#WhatWeDoInTheShadows-2014').on({
+      'click': function() {
+        posData = 11;
+        $('#trailerShop').attr('src', url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
+      }
+    });
+    $('#zoolander-2001').on({
+      'click': function() {
+        posData = 12;
+        $('#trailerShop').attr('src', url[posData]);
+        document.getElementById("titleShop").innerHTML = titles[posData];
+        document.getElementById("yearShop").innerHTML = year[posData];
+        document.getElementById("genderShop").innerHTML = gender[posData];
+        document.getElementById("descriptionShop").innerHTML = description[posData];
+      }
+    });
+    // end shopPic
+    // start Modal films
+    $(".batman").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/2znBVEWdYsY')
+        document.getElementById("movieTitle").innerHTML = "Batman";
+        document.getElementById("movieYear").innerHTML = "2017";
+        document.getElementById("movieStyle").innerHTML = "Comédie";
+        $('#imagemodal').modal('show');
+      }
+    });
+    $(".hostel").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/cVBdQiUHhZI')
+        document.getElementById("movieTitle").innerHTML = "Hostel";
+        document.getElementById("movieYear").innerHTML = "2005";
+        document.getElementById("movieStyle").innerHTML = "Thriller";
+        $('#imagemodal').modal('show');
+      }
+    });
+    $(".inception").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/B4nIVh1yvvc')
+        document.getElementById("movieTitle").innerHTML = "Inception";
+        document.getElementById("movieYear").innerHTML = "2010";
+        document.getElementById("movieStyle").innerHTML = "Sciences-Fiction";
+        $('#imagemodal').modal('show');
+      }
+    });
+    $(".lepatient").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/xImomcZczRY')
+        document.getElementById("movieTitle").innerHTML = "Le patient Anglais";
+        document.getElementById("movieYear").innerHTML = "1996";
+        document.getElementById("movieStyle").innerHTML = "Drama";
+        $('#imagemodal').modal('show');
+      }
+    });
+    $(".lesdeuxtours").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/LbfMDwc4azU')
+        document.getElementById("movieTitle").innerHTML = "Les Deux tours";
+        document.getElementById("movieYear").innerHTML = "2002";
+        document.getElementById("movieStyle").innerHTML = "Aventure";
+        $('#imagemodal').modal('show');
+      }
+    });
+    $(".seven").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/znmZoVkCjpI')
+        document.getElementById("movieTitle").innerHTML = "Seven";
+        document.getElementById("movieYear").innerHTML = "1995";
+        document.getElementById("movieStyle").innerHTML = "Thriller";
+        $('#imagemodal').modal('show');
+      }
+    });
+    $(".shutterisland").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/5iaYLCiq5RM')
+        document.getElementById("movieTitle").innerHTML = "Shutter island";
+        document.getElementById("movieYear").innerHTML = "2010";
+        document.getElementById("movieStyle").innerHTML = "Thriller";
+        $('#imagemodal').modal('show');
+      }
+    });
+    $(".starwars").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/mz_YWNhKOkM')
+        document.getElementById("movieTitle").innerHTML = "Star Wars Empire";
+        document.getElementById("movieYear").innerHTML = "1980";
+        document.getElementById("movieStyle").innerHTML = "Sciences-Fiction";
+        $('#imagemodal').modal('show');
+      }
+    });
+    $(".survivestyle").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/LEH7nDkiPEk')
+        document.getElementById("movieTitle").innerHTML = "Survive Style 5+";
+        document.getElementById("movieYear").innerHTML = "2004";
+        document.getElementById("movieStyle").innerHTML = "Comédie";
+        $('#imagemodal').modal('show');
+      }
+    });
+    $(".swissarmyman").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/yrK1f4TsQfM')
+        document.getElementById("movieTitle").innerHTML = "Swiss Army Man";
+        document.getElementById("movieYear").innerHTML = "2016";
+        document.getElementById("movieStyle").innerHTML = "Comédie";
+        $('#imagemodal').modal('show');
+      }
+    });
+    $(".thefall").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/dyFrBC1rAcg')
+        document.getElementById("movieTitle").innerHTML = "The Fall";
+        document.getElementById("movieYear").innerHTML = "2006";
+        document.getElementById("movieStyle").innerHTML = "Drama";
+        $('#imagemodal').modal('show');
+      }
+    });
+    $(".shadows").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/IAZEWtyhpes')
+        document.getElementById("movieTitle").innerHTML = "What We Do In Shadows";
+        document.getElementById("movieYear").innerHTML = "2014";
+        document.getElementById("movieStyle").innerHTML = "Comédie";
+        $('#imagemodal').modal('show');
+      }
+    });
+    $(".zoolander").on({
+      'click': function() {
+        $('#trailer').attr('src', 'https://www.youtube.com/embed/YtQq0T3ExLs')
+        document.getElementById("movieTitle").innerHTML = "Zoolander";
+        document.getElementById("movieYear").innerHTML = "2001";
+        document.getElementById("movieStyle").innerHTML = "Comédie";
+        $('#imagemodal').modal('show');
+      }
+    });
+    //end Modal films
+    // Start previous and next button for shopFilms
+    var images = ['', '', '', '', '', '', '', '', '', '', '', '', ''];
+    var url = ['', '', '', '', '', '', '', '', '', '', '', ''];
+    var titles = ['Batman', 'Hostel', 'Inception', 'Le patient anglais', 'Les deux tours', 'Se7en', 'Shutter Island', 'Star Wars Empire', 'Survive Style 5+', 'Swiss army man', 'The fall', 'What We Do In The Shadows', 'Zoolander'];
+    var year = ['2017', '2005', '2010', '1996', '2002', '1995', '2010', '1980', '2004', '2016', '2006', '2014', '2001'];
+    var gender = ['Comédie', 'Thriller', 'Sciences-Fiction', 'Drama', 'Aventure', 'Thriller', 'ThriThriller', 'Sciences-Fiction', 'Comédie', 'Comédie', 'Drama', 'Comédie', 'Comédie'];
+    var description = ['', '', '', '', '', '', '', '', '', '', '', '', '', ];
+    var posData = 0;
+    images[0] = "../img/batmanmovie-2017-comedie.jpg";
+    images[1] = "../img/hostel-2005-thriller.jpg";
+    images[2] = "../img/inception-2010-scifi.jpg";
+    images[3] = "../img/lepatientanglais-1996-dramatique.jpg";
+    images[4] = "../img/lesdeuxtours-2002-aventure.jpg";
+    images[5] = "../img/seven-1995-thriller.jpg";
+    images[6] = "../img/shutterisland-2010-thriller.jpg";
+    images[7] = "../img/starwarsempire-1980-scifi.jpg";
+    images[8] = "../img/Survivestyle5-2004-comedie.jpg";
+    images[9] = "../img/swissarmyman-2016-comedie.jpg";
+    images[10] = "../img/thefall-2006-dramatique.jpg";
+    images[11] = "../img/WhatWeDoInTheShadows-2014-comedie.jpg";
+    images[12] = "../img/zoolander-2001-comedie.jpg";
+    url[0] = "https://www.youtube.com/embed/2znBVEWdYsY";
+    url[1] = "https://www.youtube.com/embed/cVBdQiUHhZI";
+    url[2] = "https://www.youtube.com/embed/B4nIVh1yvvc";
+    url[3] = "https://www.youtube.com/embed/xImomcZczRY";
+    url[4] = "https://www.youtube.com/embed/LbfMDwc4azU";
+    url[5] = "https://www.youtube.com/embed/znmZoVkCjpI";
+    url[6] = "https://www.youtube.com/embed/5iaYLCiq5RM";
+    url[7] = "https://www.youtube.com/embed/mz_YWNhKOkM";
+    url[8] = "https://www.youtube.com/embed/LEH7nDkiPEk";
+    url[9] = "https://www.youtube.com/embed/yrK1f4TsQfM";
+    url[10] = "https://www.youtube.com/embed/dyFrBC1rAcg";
+    url[11] = "https://www.youtube.com/embed/IAZEWtyhpes";
+    url[12] = "https://www.youtube.com/embed/YtQq0T3ExLs";
+    description[0] = "A cooler-than-ever Bruce Wayne must deal with the usual suspects as they plan to rule Gotham City, while discovering that he has accidentally adopted a teenage orphan who wishes to become his sidekick.";
+    description[1] = "Three backpackers head to a Slovak city that promises to meet their hedonistic expectations, with no idea of the hell that awaits them.";
+    description[2] = "A thief, who steals corporate secrets through the use of dream-sharing technology, is given the inverse task of planting an idea into the mind of a CEO.";
+    description[3] = "At the close of WWII, a young nurse tends to a badly-burned plane crash victim. His past is shown in flashbacks, revealing an involvement in a fateful love affair.";
+    description[4] = "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.";
+    description[5] = "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.";
+    description[6] = "In 1954, a U.S. Marshal investigates the disappearance of a murderer, who escaped from a hospital for the criminally insane.";
+    description[7] = "After the rebels are overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda. His friends accept shelter from a questionable ally as Darth Vader hunts them in a plan to capture Luke.";
+    description[8] = "Five bizarre stories with no apparent connection to one and other eventually become intertwined, resulting in surreal circumstances.";
+    description[9] = "A hopeless man stranded on a deserted island befriends a dead body and together they go on a surreal journey to get home.";
+    description[10] =
+      "In a hospital on the outskirts of 1920s Los Angeles, an injured stuntman begins to tell a fellow patient, a little girl with a broken arm, a fantastic story of five mythical heroes. Thanks to his fractured state of mind and her vivid imagination, the line between fiction and reality blurs as the tale advances.";
+    description[11] =
+      "Viago, Deacon, and Vladislav are vampires who are finding that modern life has them struggling with the mundane - like paying rent, keeping up with the chore wheel, trying to get into nightclubs, and overcoming flatmate conflicts.";
+    description[12] = "At the end of his career, a clueless fashion model is brainwashed to kill the Prime Minister of Malaysia.";
+    // function for next & previous buttons + Loading Trailer when clicked images or button pressed
+    $('#next').on({
+      'click': function() {
+        if (posData >= 12) {
+          posData = 0;
+          $('#trailerShop').attr('src', url[posData]);
+          document.getElementById("titleShop").innerHTML = titles[posData];
+          document.getElementById("yearShop").innerHTML = year[posData];
+          document.getElementById("genderShop").innerHTML = gender[posData];
+          document.getElementById("descriptionShop").innerHTML = description[posData];
+        } else {
+          posData++;
+          $('#trailerShop').attr('src', url[posData]);
+          document.getElementById("titleShop").innerHTML = titles[posData];
+          document.getElementById("yearShop").innerHTML = year[posData];
+          document.getElementById("genderShop").innerHTML = gender[posData];
+          document.getElementById("descriptionShop").innerHTML = description[posData];
+        }
+      }
+    })
+    $('#previous').on({
+      'click': function() {
+        if (posData <= 0) {
+          posData = 12;
+          $('#trailerShop').attr('src', url[posData]);
+          document.getElementById("titleShop").innerHTML = titles[posData];
+          document.getElementById("yearShop").innerHTML = year[posData];
+          document.getElementById("genderShop").innerHTML = gender[posData];
+          document.getElementById("descriptionShop").innerHTML = description[posData];
+          posData--;
+        } else {
+          posData--;
+          $('#trailerShop').attr('src', url[posData]);
+          document.getElementById("titleShop").innerHTML = titles[posData];
+          document.getElementById("yearShop").innerHTML = year[posData];
+          document.getElementById("genderShop").innerHTML = gender[posData];
+          document.getElementById("descriptionShop").innerHTML = description[posData];
+        }
+      }
+    })
+
     // Subscribe will show a pop up like the send message button
     $('.subscribeBtn').on({
       'click': function() {
