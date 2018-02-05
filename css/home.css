@@ -6,7 +6,7 @@ body {
 
 #socialbutton {
   position: fixed;
-  top: 300px;
+  top: 200px;
   z-index: 999;
 }
 
@@ -574,6 +574,16 @@ hr {
 #shopMovies .right iframe {
   width: 100%;
   height: auto;
+}
+
+footer .usefulLinks {
+  font-style: 'Open Sans', sans-serif !important;
+  color: white;
+}
+
+footer .usefulLinks a {
+  text-decoration: none;
+  color: red;
 }
 
 /*pop-ups windows ____________________________________________*/

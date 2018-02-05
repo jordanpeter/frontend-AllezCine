@@ -8,84 +8,9 @@ body {
   position: relative !important;
 }
 
-#socialbutton {
-  position: fixed;
-  top: 300px;
-  z-index: 999;
-}
-
-#socialbutton ul {
-  margin: 0;
-  padding: 0;
-  width: 125px;
-}
-
-#socialbutton li {
-  margin: 0 0 5px 0;
-  padding: 5px;
-  position: relative;
-  left: -90px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  text-align: right;
-}
-
-#socialbutton li:hover {
-  left: 0;
-}
-
-#socialbutton li:nth-child(1) {
-  background-color: lightblue;
-}
-
-#socialbutton li:nth-child(1) a i {
-  color: lightblue;
-}
-
-#socialbutton li:nth-child(2) {
-  background-color: blue;
-}
-
-#socialbutton li:nth-child(2) a i {
-  color: blue;
-}
-
-#socialbutton li:nth-child(3) {
-  background-color: pink;
-}
-
-#socialbutton li:nth-child(3) a i {
-  color: pink;
-}
-
-#socialbutton li:nth-child(4) {
-  background-color: red;
-}
-
-#socialbutton li:nth-child(4) a i {
-  color: red;
-}
-
-#socialbutton li a {
-  color: white;
-}
-
-#socialbutton li a:hover {
-  text-decoration: none;
-}
-
-#socialbutton li a i {
-  width: 26px;
-  height: 26px;
-  padding: 5px;
-  margin-left: 10px;
-  background-color: white;
-  border-radius: 50%;
-}
-
 header {
   background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url(../img/wolverine/KWJcW4m.jpg);
-  height: 550px;
+  height: 75vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -251,7 +176,7 @@ header {
 }
 
 header h1 {
-  margin: 100px auto 20px auto;
+  margin: 0;
   text-align: center;
   text-transform: uppercase;
   font-weight: normal;
