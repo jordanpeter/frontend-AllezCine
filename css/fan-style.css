@@ -140,6 +140,10 @@ header {
 }
 
 .navbar-brand {
+<<<<<<< HEAD
+  font-family: 'Reem Kufi', sans-serif !important;
+=======
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
   color: white !important;
   font-size: 2em !important;
   font-weight: bolder!important;
@@ -181,7 +185,11 @@ header {
 
 #presentation h1, #bio h1, #photographies h1, #goodies h1, #contactUs h1 {
   color: black !important;
+<<<<<<< HEAD
+  font-family: 'Reem Kufi', sans-serif !important;
+=======
   font-family: 'Open Sans', sans-serif !important;
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
   text-transform: uppercase;
   font-weight: bold!important;
   letter-spacing: 0.05em;
@@ -191,25 +199,37 @@ header {
 
 #presentation h4 {
   color: #0765b2 !important;
+<<<<<<< HEAD
+  font-family: 'Reem Kufi', sans-serif !important;
+=======
   font-family: 'Open Sans', sans-serif !important;
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
   text-transform: uppercase;
   font-weight: bold!important;
 }
 
 #presentation p {
   text-align: justify;
+<<<<<<< HEAD
+  font-size: 18px;
+  font-family: 'Reem Kufi', sans-serif !important;
+=======
   font-family: 'Open Sans', sans-serif !important;
 }
 
 .zoom {
   width: 100%;
   height: 100%;
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
 }
 
 #bio img {
   width: 300px;
   height: auto;
+<<<<<<< HEAD
+=======
   padding: 10px;
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
   margin: 20px auto;
 }
 
@@ -219,8 +239,15 @@ header {
 }
 
 #bio p {
+<<<<<<< HEAD
+  font-family: 'Reem Kufi', sans-serif !important;
   text-align: justify;
   padding: 15px;
+  font-size: 18px;
+=======
+  text-align: justify;
+  padding: 15px;
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
 }
 
 @media screen and (max-width: 1060px) {
@@ -229,10 +256,13 @@ header {
   }
 }
 
+<<<<<<< HEAD
+=======
 #shopMovies h1 {
   margin-left: 80px;
 }
 
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
 /*darkblue text*/
 
 .red {
@@ -241,7 +271,11 @@ header {
 
 .red p {
   font-size: 1.2em;
+<<<<<<< HEAD
+  font-family: 'Reem Kufi', sans-serif !important;
+=======
   font-family: 'Open Sans', sans-serif !important;
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
   font-weight: bold;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -253,17 +287,40 @@ header {
 }
 
 header h1 {
+<<<<<<< HEAD
+  margin: 100px auto 20px auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 12vw;
+  z-index: 1000;
+  font-family: 'Bangers', cursive;
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 50em) {
+  header h1 {
+    font-size: 15vw;
+  }
+=======
   font-size: 2.5em;
   font-family: 'Reem Kufi', sans-serif;
   color: white !important;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
 }
 
 header p {
   font-size: 1.5em;
+<<<<<<< HEAD
+  font-family: 'Reem Kufi', sans-serif !important;
+=======
   font-family: 'Reem Kufi', sans-serif;
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
   color: black !important;
   text-align: center;
   text-transform: uppercase;
@@ -276,10 +333,13 @@ header .main-button {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
+=======
 .main-text {
   margin: 100px;
 }
 
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
 .container-yellow {
   background-color: #0765b2 !important;
   width: 100vw;
@@ -317,6 +377,10 @@ header .main-button {
 }
 
 .btn.btn-primary {
+<<<<<<< HEAD
+  font-family: 'Reem Kufi', sans-serif !important;
+=======
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
   text-transform: uppercase;
   font-weight: bold;
   background-color: #0765b2 !important;
@@ -325,6 +389,11 @@ header .main-button {
 }
 
 .filter-button button {
+<<<<<<< HEAD
+  font-family: 'Reem Kufi', sans-serif !important;
+  font-size: 20px;
+=======
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
   margin: 2px 0px;
   background-color: yellow !important;
   border-radius: 0 !important;
@@ -339,6 +408,8 @@ header .main-button {
   text-shadow: none !important;
 }
 
+<<<<<<< HEAD
+=======
 .btn-hide {
   text-align: center;
 }
@@ -377,10 +448,15 @@ header .main-button {
   filter: brightness(45%);
 }
 
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
 img {
   width: 130px;
   height: 180px;
   margin: 10px 5px;
+<<<<<<< HEAD
+  border: 1px solid black !important;
+=======
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
 }
 
 hr {
@@ -405,6 +481,10 @@ footer h5 {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
+footer .subscribe input {
+  width: 300px;
+=======
 .images h5 {
   margin-top: -8px;
   font-size: 1.5em;
@@ -419,6 +499,7 @@ footer .review p {
 }
 
 footer .subscribe input {
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
   border-radius: 0 !important;
   margin: 5px auto;
 }
@@ -440,10 +521,13 @@ footer li a i {
   height: 15px;
 }
 
+<<<<<<< HEAD
+=======
 hr {
   width: 100%;
 }
 
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
 .connect-social ul {
   margin-left: -40px !important;
 }
@@ -454,6 +538,67 @@ hr {
   color: grey;
 }
 
+<<<<<<< HEAD
+#goodies h1 {
+  margin-left: 80px;
+}
+
+#goodies .row {
+  margin: 30px;
+}
+
+#goodies .right {
+  margin: 0 auto !important;
+  background-color: #0765b2 !important;
+  height: 100%;
+  color: white !important;
+}
+
+#goodies .right h4 {
+  text-align: center;
+  font-family: 'Reem Kufi', sans-serif !important;
+  font-size: 2em !important;
+  text-transform: uppercase;
+  color: yellow !important;
+  font-weight: bold;
+}
+
+#goodies .right p {
+  text-align: center;
+  font-family: 'Reem Kufi', sans-serif !important;
+}
+
+.imageC {
+  text-align: center;
+}
+
+.inPut {
+  text-align: center;
+}
+
+#goodies input {
+  color: black !important;
+  margin-bottom: 15px;
+  width: 5em;
+  text-align: center;
+}
+
+#goodies button {
+  width: 5em;
+  background: transparent!important;
+  border-color: transparent !important;
+  color: white !important;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#descriptionShop {
+  font-size: 1.5em !important;
+  color: yellow !important;
+=======
 .subscribe2 {
   margin: 20px auto;
 }
@@ -532,6 +677,7 @@ hr {
 #shopMovies .right iframe {
   width: 100%;
   height: auto;
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
 }
 
 /*pop-ups windows ____________________________________________*/
@@ -539,7 +685,12 @@ hr {
 .modal-header {
   text-align: center;
   text-transform: uppercase !important;
+<<<<<<< HEAD
+  font-family: 'Reem Kufi', sans-serif !important;
+  font-size: 18px;
+=======
   font-style: 'Open Sans', sans-serif !important;
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
 }
 
 .modal-header h4 {
@@ -582,10 +733,29 @@ hr {
   padding: 10px;
 }
 
+<<<<<<< HEAD
+#imagemodal .modal-content {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+#imagemodal .modal-content img {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border: 5px solid black !important;
+}
+
+=======
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
 @media screen and (min-width:760px) {
   .navbar-brand {
     margin-left: 530px;
   }
+<<<<<<< HEAD
+}
+=======
 }
 
 #buttonScroll{
@@ -601,3 +771,4 @@ hr {
   z-index: 999;
   padding: 15px;
 }
+>>>>>>> a94898ba5708e6a8bfa2b8939b39c82fca8ecfa5
